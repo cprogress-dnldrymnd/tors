@@ -22,7 +22,7 @@ Text Domain:  tors-child
   font-style: normal;
   font-display: swap; }
 body {
-  font-family: 'CircularStd', sans-serif; }
+  font-family: 'CircularStd', sans-serif !important; }
 
 @media screen and (min-width: 768px) and (max-width: 819px) {
   body.logged-in header {
