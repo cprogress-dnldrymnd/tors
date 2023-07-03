@@ -21,7 +21,8 @@ Text Domain:  tors-child
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
-body, h1,
+body,
+h1,
 h2,
 h3,
 h4,
@@ -32,7 +33,10 @@ h6,
 .h3,
 .h4,
 .h5,
-.h6, p, li {
+.h6,
+p,
+li,
+.elementor-widget-button .elementor-button {
   font-family: 'CircularStd', sans-serif !important; }
 
 @media screen and (min-width: 768px) and (max-width: 819px) {
