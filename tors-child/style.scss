@@ -38,7 +38,18 @@ $CircularStd: (
 
 @include font-face("CircularStd", $font-url + "CircularStd/", "CircularStd", normal, $CircularStd);
 
-body {
+body, h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6, p, li {
   font-family: 'CircularStd', sans-serif !important;
 }
 @media screen and (min-width: 768px) and (max-width: 819px) {
