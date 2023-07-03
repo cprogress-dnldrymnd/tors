@@ -1,0 +1,296 @@
+/*
+Theme Name: TORS
+Author: Digitally Disruptive
+Author URI: https://digitallydisruptive.co.uk/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: tors
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 819px){
+    body.logged-in header{
+        margin-top: 45px!important;
+    }
+}
+@media screen and (min-width: 820px){
+    body.logged-in header{
+        margin-top: 32px!important;
+    }
+}
+.inner-page .main-banner{
+    padding: 195px 0 0 !important;
+}
+@media (max-width: 767px){
+    body.logged-in #side-panel-menu{
+        padding-top: 70px;
+    }
+}
+/*-------- Comment -----------*/
+.comment-form-cookies-consent,
+.required-field-message{
+    display: none!important;
+}
+.blog-comment-sec .user-comment h5{
+    text-transform: capitalize;
+}
+.comment-respond form p.logged-in-as{
+    margin-bottom: 8px;
+}
+h3.commnets-title{
+    font-size: 36px !important;
+    font-weight: 700;
+}
+.comment-reply-link{
+    padding: 6px 15px;
+    color: #fff!important;
+    border: 1px solid #de3c63;
+    background: #de3c63;
+    position: absolute;
+    text-decoration: none!important;  
+    font-weight: 500;
+    border-radius: 48px;
+}
+.comment-reply-link:hover{
+    border: 1px solid #de3c63;
+    color: #de3c63!important;
+    background: #fff;
+    font-weight: 500;
+}
+div.user-comment{
+    position: relative;
+}
+@media(min-width:500px){
+    .comment-reply-link{
+        right: 0px;
+        top: 0px;
+    }
+}
+@media(max-width:499px){
+    .users-list{
+        margin-bottom: 45px;
+    }
+}
+/*----- Search with no result ----*/
+.search-form input{
+    border-radius: 0;
+}
+.search-custom h4 {
+    text-align: justify;
+    line-height: 45px;
+    margin-bottom: 5%;
+}
+.search-custom form input {
+    max-width: 100% !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #de3c63 !important;
+    font-size: 18px !important;
+    color: #7a7a7a !important;
+    padding: 10px 20px !important;
+    height: 50px;
+}
+.search-custom form button{
+    border-radius: 0 !important;
+    color: #fff;
+    font-size: 16px;
+    height: 50px;
+    position: relative;
+    width: 53px;
+    cursor: pointer;
+    float: right;
+    background: #de3c63;
+    margin-top: -50px;
+    padding: 0;
+    letter-spacing: 0;
+}
+.search-custom form button:hover{
+    background: #de3c63;
+    color: #fff;
+}
+.search-no-result{
+    padding-top: 15px;
+}
+.search-no-result .form-control:focus{
+    -webkit-box-shadow: unset;
+    box-shadow:unset;
+}
+.blog-items-area:has(.search-no-result) > div{
+    width: 100%;
+}
+@media(min-width: 768px){
+    .blog-items-area .search-no-result{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+/*----  Sidebar --------*/
+.sidebar .widget_search form button{
+    position: absolute;
+    width: 60px;
+    height: 48px;
+    border-radius: 48px;
+    right: 15px;
+}
+.sidebar .widget_categories ul li{
+    list-style: none;
+    width: 100%;
+    height: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 41.5px;
+    border-bottom: 1px solid #ddd;
+}
+.sidebar .widget_categories ul li:last-child,
+.sidebar .widget_news .underlined-list li:last-child{
+    border-bottom: none;
+}
+.sidebar .widget_news ul{
+    margin-bottom: 20px;
+}
+.sidebar .widget_categories ul li a{
+    color: #666;
+}
+.sidebar .widget_categories ul li a:hover{
+    color: #e43c5c;
+}
+.sidebar .widget_categories ul,
+.sidebar .widget_tag_cloud ul{
+    padding-left: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.sidebar .widget_tag_cloud ul li{
+    display: inline-block;
+    margin-bottom: 22px;
+}
+.sidebar .widget_tag_cloud ul li a{
+    color: #666;
+    font-size: 14px !important;
+    line-height: 24px;
+    letter-spacing: 1px;
+    border: 1px solid #666;
+    padding: 9px;
+    font-weight: bold;
+    border-radius: 40px;
+}
+.sidebar .widget_tag_cloud ul li a{
+    margin-right: 5px;
+}
+.sidebar .widget_tag_cloud ul li a:hover{
+    border: 1px solid #e43c5c;
+    color: #e43c5c;
+}
+/*-------- Pagination -----------*/
+.pagination-style {
+    padding-left: 0;
+    margin-top: 30px;
+    list-style: none;
+}
+.pagination-style li{
+    display: inline-block;
+    margin: 0 5px;
+}
+.pagination-style .current a{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #e43c5c;
+    color: #fff;
+    z-index: 2;
+    border: none;
+    border: 1px solid #e43c5c;
+}
+.pagination-style li a{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #e43c5c;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #fff;
+    z-index: 2;
+    border: 1px solid #e43c5c;
+}
+.pagination-style li a:hover {
+    background: #e43c5c;
+    color: #fff;
+}
+.main-feature-contents-btn-area:has(.pagination-style){
+    background: unset;
+}
+/*-------- Contact -----------*/
+section.contact-area-sec span.wpcf7-not-valid-tip{
+    color: #54595F;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+section.contact-area-sec div.wpcf7-validation-errors{
+    display: flex;
+    color: #54595F;
+    border: 2px solid #54595F;
+}
+/*-------- Footer -----------*/
+footer span.wpcf7-not-valid-tip{
+    color:#fff;
+}
+footer div.wpcf7-validation-errors{
+    border: 2px solid #fff;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+footer form .news-letter input[type="submit"]{
+    margin-top: -15px!important;
+}
+/*-------- End Footer -----------*/
+@media(min-width: 281px){
+    .flikr-img-list li img{
+        height: 75px;
+    }
+}
+.img-holder-with-shadow{
+    box-shadow: 0 5px 6px 1px rgb(0 0 0 / 20%) !important;
+}
+@media (max-width: 280px){
+    header .logo a img{
+        max-width: 160px!important;
+    }
+    .flikr-img-list li img{
+        height: 50px;
+    }
+}
+.content-area .video-box{
+    z-index: 1;
+}
+section.home-about-area .content ul + a{
+    text-decoration: underline;
+}
+.blog-contents:has(.pagination-style){
+    margin-bottom: 50px;
+}
+.copyright p {
+    color: #fff;
+    font-size: 13px;
+}
+.footer-contents .links li {
+    margin-bottom: 10px;
+}
+.footer-contents .links li a {
+    color: #fff;
+}
