@@ -389,3 +389,10 @@ section.home-about-area .content ul+a {
 .footer-contents .links li a {
   color: #fff;
 }
+
+.text-white-big {
+  p, li {
+    color: var(--white-color);
+    font-size: 30px;
+  }
+}
