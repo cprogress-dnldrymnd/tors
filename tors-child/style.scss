@@ -419,7 +419,29 @@ section.home-about-area .content ul+a {
       top: 0;
       text-align: left;
 
-      &:before {}
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #FDCD556E;
+        opacity: 0;
+        transition: 300ms;
+      }
+
+      &:after {
+        content: '';
+        width: 10vw;
+        height: 10vw;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
     }
   }
 }
