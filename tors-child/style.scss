@@ -391,8 +391,19 @@ section.home-about-area .content ul+a {
 }
 
 .text-white-big {
-  p, li {
+
+  p,
+  li {
     color: var(--white-color);
     font-size: 30px;
+  }
+}
+
+.button-background {
+  .elementor-button-wrapper {
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
   }
 }

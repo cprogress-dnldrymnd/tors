@@ -302,8 +302,15 @@ section.home-about-area .content ul + a {
 .footer-contents .links li a {
   color: #fff; }
 
-.text-white-big p, .text-white-big li {
+.text-white-big p,
+.text-white-big li {
   color: var(--white-color);
   font-size: 30px; }
+
+.button-background .elementor-button-wrapper {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 30px; }
 
 /*# sourceMappingURL=style.css.map */
