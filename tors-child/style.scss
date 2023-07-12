@@ -418,7 +418,9 @@ section.home-about-area .content ul+a {
       bottom: 0;
       top: 0;
       text-align: left;
-
+      .elementor-button-content-wrapper {
+        width: 100%;
+      }
       &:before {
         content: '';
         position: absolute;

@@ -323,6 +323,8 @@ section.home-about-area .content ul + a {
     bottom: 0;
     top: 0;
     text-align: left; }
+    .button-background .elementor-button-wrapper .elementor-button .elementor-button-content-wrapper {
+      width: 100%; }
     .button-background .elementor-button-wrapper .elementor-button:before {
       content: '';
       position: absolute;
