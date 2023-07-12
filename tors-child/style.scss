@@ -453,3 +453,9 @@ section.home-about-area .content ul+a {
     }
   }
 }
+
+.elementor-text-editor {
+  > * {
+    font-size: inherit;
+  }
+}
