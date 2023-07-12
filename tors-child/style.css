@@ -349,4 +349,14 @@ section.home-about-area .content ul + a {
 .elementor-text-editor > * {
   font-size: inherit; }
 
+.button-with-line .elementor-widget-container:before {
+  content: '';
+  height: 1px;
+  background-color: #DDDDDD;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateX(-50%); }
+
 /*# sourceMappingURL=style.css.map */
