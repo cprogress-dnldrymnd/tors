@@ -309,8 +309,14 @@ section.home-about-area .content ul + a {
 
 .button-background .elementor-button-wrapper {
   position: absolute;
-  left: 30px;
-  right: 30px;
-  bottom: 30px; }
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  text-align: left;
+  display: flex;
+  align-items: flex-end; }
+  .button-background .elementor-button-wrapper .elementor-button {
+    padding: 30px; }
 
 /*# sourceMappingURL=style.css.map */
