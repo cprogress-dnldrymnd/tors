@@ -455,13 +455,17 @@ section.home-about-area .content ul+a {
 }
 
 .elementor-text-editor {
-  > * {
+  >* {
     font-size: inherit;
   }
 }
 
 .button-with-line {
   .elementor-widget-container {
+    position: relative;
+    .elementor-button-wrapper {
+      position: relative;
+    }
     &:before {
       content: '';
       height: 1px;
@@ -470,7 +474,7 @@ section.home-about-area .content ul+a {
       left: 0;
       right: 0;
       top: 50%;
-      transform: translateX(-50%);
+      transform: translateY(-50%);
     }
   }
 }
