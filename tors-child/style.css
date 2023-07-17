@@ -377,4 +377,21 @@ section.home-about-area .content ul + a {
   padding-left: 13px;
   list-style: initial; }
 
+.button-box > a,
+.button-box button {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--e-global-color-text);
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  padding: 15px 30px 15px 30px; }
+.button-box.button-accent > a,
+.button-box.button-accent button {
+  border-color: var(--e-global-color-accent);
+  background-color: var(--e-global-color-accent); }
+  .button-box.button-accent > a:hover,
+  .button-box.button-accent button:hover {
+    border-color: var(--e-global-color-accent);
+    background-color: var(--e-global-color-accent); }
+
 /*# sourceMappingURL=style.css.map */

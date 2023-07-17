@@ -505,3 +505,31 @@ section.home-about-area .content ul+a {
     list-style: initial;
   }
 }
+
+.button-box {
+
+  >a,
+  button {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--e-global-color-text);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    padding: 15px 30px 15px 30px;
+
+  }
+
+  &.button-accent {
+
+    >a,
+    button {
+      border-color: var(--e-global-color-accent);
+      background-color: var(--e-global-color-accent);
+
+      &:hover {
+        border-color: var(--e-global-color-accent);
+        background-color: var(--e-global-color-accent);
+      }
+    }
+  }
+}
