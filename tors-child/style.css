@@ -346,7 +346,7 @@ section.home-about-area .content ul + a {
     .button-background .elementor-button-wrapper .elementor-button:hover::before {
       opacity: 1; }
 
-.elementor-widget-container > * {
+.elementor-widget-container > *, .elementor-text-editor > * {
   font-size: inherit; }
 
 .button-with-line .elementor-widget-container {
@@ -364,6 +364,6 @@ section.home-about-area .content ul + a {
     transform: translateY(-50%); }
 
 .home-about-area .features-contents {
-  font-size: 36px; }
+  font-size: 36px !important; }
 
 /*# sourceMappingURL=style.css.map */

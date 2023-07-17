@@ -454,7 +454,7 @@ section.home-about-area .content ul+a {
   }
 }
 
-.elementor-widget-container {
+.elementor-widget-container, .elementor-text-editor {
   >* {
     font-size: inherit;
   }
@@ -481,6 +481,6 @@ section.home-about-area .content ul+a {
 
 .home-about-area {
   .features-contents {
-    font-size: 36px;
+    font-size: 36px !important;
   }
 }
