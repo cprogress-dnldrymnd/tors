@@ -376,6 +376,8 @@ section.home-about-area .content ul + a {
 .home-about-area ol {
   padding-left: 13px;
   list-style: initial; }
+.home-about-area .button-box {
+  margin-top: 30px; }
 
 .button-box > a,
 .button-box button {
@@ -384,7 +386,9 @@ section.home-about-area .content ul + a {
   color: var(--e-global-color-text);
   border-style: solid;
   border-width: 1px 1px 1px 1px;
-  padding: 15px 30px 15px 30px; }
+  padding: 15px 30px 15px 30px;
+  border-radius: 50px;
+  display: inline-block; }
 .button-box.button-accent > a,
 .button-box.button-accent button {
   border-color: var(--e-global-color-accent);
