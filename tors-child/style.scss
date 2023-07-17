@@ -531,8 +531,9 @@ section.home-about-area .content ul+a {
       background-color: var(--e-global-color-accent);
 
       &:hover {
-        border-color: var(--e-global-color-accent);
-        background-color: var(--e-global-color-accent);
+        border-color: #333333;
+        background-color: #333333;
+        color: #fff;
       }
     }
   }
