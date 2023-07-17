@@ -10,7 +10,7 @@
  * Domain Path: /languages/
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
+if (!defined('ABSPATH')) {
 	exit; // Exit if accessed directly.
 }
 
@@ -21,7 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @since 1.0.0
  */
-final class TorsDevElementor {
+final class TorsDevElementor
+{
 
 	/**
 	 * Plugin Version
@@ -74,9 +75,10 @@ final class TorsDevElementor {
 	 *
 	 * @return TorsDevElementor An instance of the class.
 	 */
-	public static function instance() {
+	public static function instance()
+	{
 
-		if ( is_null( self::$_instance ) ) {
+		if (is_null(self::$_instance)) {
 			self::$_instance = new self();
 		}
 		return self::$_instance;
@@ -90,10 +92,11 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function __construct() {
+	public function __construct()
+	{
 
-		add_action( 'init', [ $this, 'i18n' ] );
-		add_action( 'plugins_loaded', [ $this, 'init' ] );
+		add_action('init', [$this, 'i18n']);
+		add_action('plugins_loaded', [$this, 'init']);
 
 	}
 
@@ -108,9 +111,10 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function i18n() {
+	public function i18n()
+	{
 
-		load_plugin_textdomain( 'bdevs-elementor' );
+		load_plugin_textdomain('bdevs-elementor');
 
 	}
 
@@ -127,35 +131,36 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function init() {
+	public function init()
+	{
 
 		// Check if Elementor installed and activated
-		if ( ! did_action( 'elementor/loaded' ) ) {
-			add_action( 'admin_notices', [ $this, 'admin_notice_missing_main_plugin' ] );
+		if (!did_action('elementor/loaded')) {
+			add_action('admin_notices', [$this, 'admin_notice_missing_main_plugin']);
 			return;
 		}
 
 		// Check for required Elementor version
-		if ( ! version_compare( ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=' ) ) {
-			add_action( 'admin_notices', [ $this, 'admin_notice_minimum_elementor_version' ] );
+		if (!version_compare(ELEMENTOR_VERSION, self::MINIMUM_ELEMENTOR_VERSION, '>=')) {
+			add_action('admin_notices', [$this, 'admin_notice_minimum_elementor_version']);
 			return;
 		}
 
 		// Check for required PHP version
-		if ( version_compare( PHP_VERSION, self::MINIMUM_PHP_VERSION, '<' ) ) {
-			add_action( 'admin_notices', [ $this, 'admin_notice_minimum_php_version' ] );
+		if (version_compare(PHP_VERSION, self::MINIMUM_PHP_VERSION, '<')) {
+			add_action('admin_notices', [$this, 'admin_notice_minimum_php_version']);
 			return;
 		}
 
-		add_action( 'elementor/init', [ $this, 'add_elementor_category' ], 1 );
+		add_action('elementor/init', [$this, 'add_elementor_category'], 1);
 
 		// Add Plugin actions
-		add_action( 'elementor/frontend/after_register_scripts', [ $this, 'register_frontend_scripts' ], 10 );
+		add_action('elementor/frontend/after_register_scripts', [$this, 'register_frontend_scripts'], 10);
 
 		// Register Widget Styles
-		add_action( 'elementor/frontend/after_enqueue_styles', [ $this, 'register_frontend_styles' ] );
+		add_action('elementor/frontend/after_enqueue_styles', [$this, 'register_frontend_styles']);
 
-		add_action( 'elementor/widgets/widgets_registered', [ $this, 'init_widgets' ] );
+		add_action('elementor/widgets/widgets_registered', [$this, 'init_widgets']);
 
 		// Register controls
 		//add_action( 'elementor/controls/controls_registered', [ $this, 'register_controls' ] );
@@ -170,18 +175,20 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function admin_notice_missing_main_plugin() {
+	public function admin_notice_missing_main_plugin()
+	{
 
-		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
+		if (isset($_GET['activate']))
+			unset($_GET['activate']);
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__( '"%1$s" requires "%2$s" to be installed and activated.', 'bdevs-elementor' ),
-			'<strong>' . esc_html__( 'tors Elementor', 'bdevs-elementor' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'bdevs-elementor' ) . '</strong>'
+			esc_html__('"%1$s" requires "%2$s" to be installed and activated.', 'bdevs-elementor'),
+			'<strong>' . esc_html__('tors Elementor', 'bdevs-elementor') . '</strong>',
+			'<strong>' . esc_html__('Elementor', 'bdevs-elementor') . '</strong>'
 		);
 
-		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+		printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message);
 
 	}
 
@@ -194,19 +201,21 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function admin_notice_minimum_elementor_version() {
+	public function admin_notice_minimum_elementor_version()
+	{
 
-		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
+		if (isset($_GET['activate']))
+			unset($_GET['activate']);
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'bdevs-elementor' ),
-			'<strong>' . esc_html__( 'tors Elementor', 'bdevs-elementor' ) . '</strong>',
-			'<strong>' . esc_html__( 'Elementor', 'bdevs-elementor' ) . '</strong>',
-			 self::MINIMUM_ELEMENTOR_VERSION
+			esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'bdevs-elementor'),
+			'<strong>' . esc_html__('tors Elementor', 'bdevs-elementor') . '</strong>',
+			'<strong>' . esc_html__('Elementor', 'bdevs-elementor') . '</strong>',
+			self::MINIMUM_ELEMENTOR_VERSION
 		);
 
-		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+		printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message);
 
 	}
 
@@ -219,48 +228,54 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function admin_notice_minimum_php_version() {
+	public function admin_notice_minimum_php_version()
+	{
 
-		if ( isset( $_GET['activate'] ) ) unset( $_GET['activate'] );
+		if (isset($_GET['activate']))
+			unset($_GET['activate']);
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__( '"%1$s" requires "%2$s" version %3$s or greater.', 'bdevs-elementor' ),
-			'<strong>' . esc_html__( 'tors Elementor', 'bdevs-elementor' ) . '</strong>',
-			'<strong>' . esc_html__( 'PHP', 'bdevs-elementor' ) . '</strong>',
-			 self::MINIMUM_PHP_VERSION
+			esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'bdevs-elementor'),
+			'<strong>' . esc_html__('tors Elementor', 'bdevs-elementor') . '</strong>',
+			'<strong>' . esc_html__('PHP', 'bdevs-elementor') . '</strong>',
+			self::MINIMUM_PHP_VERSION
 		);
 
-		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
+		printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message);
 
 	}
 
 	/**
 	 * Add Elementor category.
 	 */
-	public function add_elementor_category() {
-    	\Elementor\Plugin::instance()->elements_manager->add_category('bdevs-elementor',
-	      	array(
-					'title' => __( 'tors Elementor', 'bdevs-elementor' ),
-					'icon'  => 'fa fa-plug',
-	      	) 
-	    );
+	public function add_elementor_category()
+	{
+		\Elementor\Plugin::instance()->elements_manager->add_category(
+			'bdevs-elementor',
+			array(
+				'title' => __('tors Elementor', 'bdevs-elementor'),
+				'icon'  => 'fa fa-plug',
+			)
+		);
 	}
 
 	/**
-	* Register Frontend Scripts
-	*
-	*/
-	public function register_frontend_scripts() {
-	wp_register_script( 'bdevs-elementor', plugin_dir_url( __FILE__ ) . 'assets/js/bdevs-elementor.js', array( 'jquery' ), self::VERSION );
+	 * Register Frontend Scripts
+	 *
+	 */
+	public function register_frontend_scripts()
+	{
+		wp_register_script('bdevs-elementor', plugin_dir_url(__FILE__) . 'assets/js/bdevs-elementor.js', array('jquery'), self::VERSION);
 	}
 
 	/**
-	* Register Frontend styles
-	*
-	*/
-	public function register_frontend_styles() {
-	wp_register_style( 'bdevs-elementor', plugin_dir_url( __FILE__ ) . 'assets/css/bdevs-elementor.css', self::VERSION );
+	 * Register Frontend styles
+	 *
+	 */
+	public function register_frontend_styles()
+	{
+		wp_register_style('bdevs-elementor', plugin_dir_url(__FILE__) . 'assets/css/bdevs-elementor.css', self::VERSION);
 	}
 
 
@@ -275,35 +290,39 @@ final class TorsDevElementor {
 	 *
 	 * @access public
 	 */
-	public function init_widgets() {
+	public function init_widgets()
+	{
 
 		// Include Widget files
-		require_once plugin_dir_path( __FILE__ ) . 'widgets/banner-widget.php';
-		
-		
+		require_once plugin_dir_path(__FILE__) . 'widgets/banner-widget.php';
+
+
 		// Register widget
-		\Elementor\Plugin::instance()->widgets_manager->register_widget_type( new \TorsDevElementor\Widget\TorsDevBanner() );
+		\Elementor\Plugin::instance()->widgets_manager->register_widget_type(new \TorsDevElementor\Widget\TorsDevBanner());
 	}
 
 	/** 
 	 * register_controls description
 	 * @return [type] [description]
 	 */
-	public function register_controls() {
+	public function register_controls()
+	{
 
 		$controls_manager = \Elementor\Plugin::$instance->controls_manager;
-		$controls_manager->register_control( 'slider-widget', new Test_Control1() );
-	
+		$controls_manager->register_control('slider-widget', new Test_Control1());
+
 	}
 
 	/**
 	 * Prints the Elementor Page content.
 	 */
-	public static function get_content( $id = 0 ) {
-		if ( class_exists( '\ElementorPro\Plugin' ) ) {
-			echo do_shortcode( '[elementor-template id="' . $id . '"]' );
-		} else {
-			echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display( $id );
+	public static function get_content($id = 0)
+	{
+		if (class_exists('\ElementorPro\Plugin')) {
+			echo do_shortcode('[elementor-template id="' . $id . '"]');
+		}
+		else {
+			echo \Elementor\Plugin::instance()->frontend->get_builder_content_for_display($id);
 		}
 	}
 
