@@ -346,7 +346,7 @@ section.home-about-area .content ul + a {
     .button-background .elementor-button-wrapper .elementor-button:hover::before {
       opacity: 1; }
 
-.elementor-text-editor > * {
+.elementor-widget-container > * {
   font-size: inherit; }
 
 .button-with-line .elementor-widget-container {
