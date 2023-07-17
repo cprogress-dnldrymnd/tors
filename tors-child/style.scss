@@ -483,10 +483,6 @@ section.home-about-area .content ul+a {
 }
 
 .home-about-area {
-  .features-contents {
-    font-size: 36px !important;
-  }
-
   .tab-content-area input:checked+label {
     background-color: #333333 !important;
     border-color: #333333 !important;
@@ -544,4 +540,9 @@ section.home-about-area .content ul+a {
 .home-blog-contents.home-blog-contents {
   background-color: transparent;
   padding-top: 70px;
+}
+
+.home-blog-contents h2,
+.home-about-area .features-contents {
+  font-size: 36px !important;
 }
