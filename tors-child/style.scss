@@ -486,7 +486,9 @@ section.home-about-area .content ul+a {
   .features-contents {
     font-size: 36px !important;
   }
-
+.tab-content-area input:checked+label {
+  background-color: #333333 !important;
+}
   ul, ol {
     padding-left: 13px;
     list-style: initial;
