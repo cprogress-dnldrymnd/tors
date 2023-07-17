@@ -346,7 +346,8 @@ section.home-about-area .content ul + a {
     .button-background .elementor-button-wrapper .elementor-button:hover::before {
       opacity: 1; }
 
-.elementor-widget-container > *, .elementor-text-editor > * {
+.elementor-widget-container > *,
+.elementor-text-editor > * {
   font-size: inherit; }
 
 .button-with-line .elementor-widget-container {
@@ -365,5 +366,8 @@ section.home-about-area .content ul + a {
 
 .home-about-area .features-contents {
   font-size: 36px !important; }
+.home-about-area ul, .home-about-area ol {
+  padding-left: 13px;
+  list-style: initial; }
 
 /*# sourceMappingURL=style.css.map */

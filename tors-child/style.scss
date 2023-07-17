@@ -454,7 +454,8 @@ section.home-about-area .content ul+a {
   }
 }
 
-.elementor-widget-container, .elementor-text-editor {
+.elementor-widget-container,
+.elementor-text-editor {
   >* {
     font-size: inherit;
   }
@@ -463,9 +464,11 @@ section.home-about-area .content ul+a {
 .button-with-line {
   .elementor-widget-container {
     position: relative;
+
     .elementor-button-wrapper {
       position: relative;
     }
+
     &:before {
       content: '';
       height: 1px;
@@ -482,5 +485,10 @@ section.home-about-area .content ul+a {
 .home-about-area {
   .features-contents {
     font-size: 36px !important;
+  }
+
+  ul, ol {
+    padding-left: 13px;
+    list-style: initial;
   }
 }
