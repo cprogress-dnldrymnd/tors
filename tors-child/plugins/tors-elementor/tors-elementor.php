@@ -10,6 +10,9 @@
  * Domain Path: /languages/
  */
 
+if (!defined('ABSPATH')) {
+	exit; // Exit if accessed directly.
+}
 
 /**
  * Main TorsDev Elementor Class
@@ -75,7 +78,10 @@ final class TorsDevElementor
 	public static function instance()
 	{
 
-		self::$_instance = new self();
+		if (is_null(self::$_instance)) {
+			self::$_instance = new self();
+		}
+		return self::$_instance;
 
 	}
 
