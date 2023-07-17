@@ -400,4 +400,8 @@ section.home-about-area .content ul + a {
     background-color: #333333;
     color: #fff; }
 
+.home-blog-contents.home-blog-contents {
+  background-color: transparent;
+  padding-top: 70px; }
+
 /*# sourceMappingURL=style.css.map */
