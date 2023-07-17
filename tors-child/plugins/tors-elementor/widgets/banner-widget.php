@@ -41,7 +41,7 @@ class TorsDevBanner extends \Elementor\Widget_Base {
      * @return string Widget title.
      */
     public function get_title() {
-        return __( 'Banner', 'bdevs-elementor' );
+        return __( 'Banner x', 'bdevs-elementor' );
     }
 
     /**
