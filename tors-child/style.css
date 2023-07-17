@@ -363,4 +363,7 @@ section.home-about-area .content ul + a {
     top: 50%;
     transform: translateY(-50%); }
 
+.home-about-area .features-contents {
+  font-size: 36px; }
+
 /*# sourceMappingURL=style.css.map */
