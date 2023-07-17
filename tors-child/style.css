@@ -371,7 +371,8 @@ section.home-about-area .content ul + a {
   background-color: #333333 !important;
   border-color: #333333 !important; }
 .home-about-area ul,
-.home-about-area ol {
+.home-about-area ol,
+.home-about-area li {
   padding-left: 13px;
   list-style: initial; }
 .home-about-area .button-box {
