@@ -388,7 +388,8 @@ section.home-about-area .content ul + a {
   border-width: 1px 1px 1px 1px;
   padding: 15px 30px 15px 30px;
   border-radius: 50px;
-  display: inline-block; }
+  display: inline-block;
+  line-height: 1; }
 .button-box.button-accent > a,
 .button-box.button-accent button {
   border-color: var(--e-global-color-accent);
