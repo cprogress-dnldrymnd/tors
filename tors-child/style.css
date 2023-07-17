@@ -402,6 +402,9 @@ section.home-about-area .content ul + a {
   background-color: transparent;
   padding-top: 70px; }
 
+.home-blog-contents h2 {
+  color: #fff; }
+
 .home-blog-contents h2,
 .home-about-area .features-contents {
   font-size: 36px !important; }
