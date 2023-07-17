@@ -27,7 +27,7 @@ class TorsDevBanner extends \Elementor\Widget_Base {
      * @return string Widget name.
      */
     public function get_name() {
-        return 'bdevs-banner';
+        return 'torsdev-banner';
     }
 
     /**
@@ -41,7 +41,7 @@ class TorsDevBanner extends \Elementor\Widget_Base {
      * @return string Widget title.
      */
     public function get_title() {
-        return __( 'Banner x', 'bdevs-elementor' );
+        return __( 'Banner x', 'torsdev-elementor' );
     }
 
     /**
@@ -69,7 +69,7 @@ class TorsDevBanner extends \Elementor\Widget_Base {
      * @return array Widget categories.
      */
     public function get_categories() {
-        return [ 'bdevs-elementor' ];
+        return [ 'torsdev-elementor' ];
     }
 
     public function get_keywords() {
@@ -77,22 +77,22 @@ class TorsDevBanner extends \Elementor\Widget_Base {
     }
 
     public function get_script_depends() {
-        return [ 'bdevs-elementor'];
+        return [ 'torsdev-elementor'];
     }
 
     // BDT Position
     protected function element_pack_position() {
         $position_options = [
-            ''              => esc_html__('Default', 'bdevs-elementor'),
-            'top-left'      => esc_html__('Top Left', 'bdevs-elementor') ,
-            'top-center'    => esc_html__('Top Center', 'bdevs-elementor') ,
-            'top-right'     => esc_html__('Top Right', 'bdevs-elementor') ,
-            'center'        => esc_html__('Center', 'bdevs-elementor') ,
-            'center-left'   => esc_html__('Center Left', 'bdevs-elementor') ,
-            'center-right'  => esc_html__('Center Right', 'bdevs-elementor') ,
-            'bottom-left'   => esc_html__('Bottom Left', 'bdevs-elementor') ,
-            'bottom-center' => esc_html__('Bottom Center', 'bdevs-elementor') ,
-            'bottom-right'  => esc_html__('Bottom Right', 'bdevs-elementor') ,
+            ''              => esc_html__('Default', 'torsdev-elementor'),
+            'top-left'      => esc_html__('Top Left', 'torsdev-elementor') ,
+            'top-center'    => esc_html__('Top Center', 'torsdev-elementor') ,
+            'top-right'     => esc_html__('Top Right', 'torsdev-elementor') ,
+            'center'        => esc_html__('Center', 'torsdev-elementor') ,
+            'center-left'   => esc_html__('Center Left', 'torsdev-elementor') ,
+            'center-right'  => esc_html__('Center Right', 'torsdev-elementor') ,
+            'bottom-left'   => esc_html__('Bottom Left', 'torsdev-elementor') ,
+            'bottom-center' => esc_html__('Bottom Center', 'torsdev-elementor') ,
+            'bottom-right'  => esc_html__('Bottom Right', 'torsdev-elementor') ,
         ];
 
         return $position_options;
@@ -103,54 +103,54 @@ class TorsDevBanner extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content_heading',
             [
-                'label' => esc_html__( 'Banner', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Banner', 'torsdev-elementor' ),
             ]   
         );
         $this->add_control(
             'banner_image',
             [
-                'label'   => esc_html__( 'Banner Image', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Banner Image', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::MEDIA,
                 'dynamic' => [ 'active' => true ],
-                'description' => esc_html__( 'Add image from here', 'bdevs-elementor' ),
+                'description' => esc_html__( 'Add image from here', 'torsdev-elementor' ),
             ]
         );
         $this->add_control(
             'tabs',
             [
-                'label' => esc_html__( 'Items', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Items', 'torsdev-elementor' ),
                 'type' => Controls_Manager::REPEATER,
                 'fields' => [
                     [
                         'name'        => 'heading',
-                        'label'       => esc_html__( 'Heading:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Heading:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXT,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( 'This is heading' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( 'This is heading' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                     [
                         'name'        => 'subheading',
-                        'label'       => esc_html__( 'Subheading:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Subheading:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXT,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( 'This is subheading' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( 'This is subheading' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                     [
                         'name'        => 'link_button',
-                        'label'       => esc_html__( 'Link Button:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Link Button:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXT,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( '#' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( '#' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                     [
                         'name'        => 'button_description',
-                        'label'       => esc_html__( 'Button Description:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Button Description:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXT,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( 'This is button description' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( 'This is button description' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                 ],
@@ -165,30 +165,30 @@ class TorsDevBanner extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content_layout',
             [
-                'label' => esc_html__( 'Layout', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Layout', 'torsdev-elementor' ),
             ]
         );
 
         $this->add_responsive_control(
             'align',
             [
-                'label'   => esc_html__( 'Alignment', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Alignment', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Left', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Center', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Right', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justified', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Justified', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-justify',
                     ],
                 ],

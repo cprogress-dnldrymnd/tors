@@ -22,13 +22,13 @@ Create unlimited beautiful sliders with Elementor Page Builder.
 
 === Manually ===
 
-1. Upload the `bdevs-elementor` folder to the `/wp-content/plugins/` directory
+1. Upload the `torsdev-elementor` folder to the `/wp-content/plugins/` directory
 2. Activate the TorsDev Elementor plugin through the 'Plugins' menu in WordPress
 3. Go to "after activation" below.
 
 == Frequently Asked Questions ==
 
-You'll find answers to many of your questions on (http://bdevs.net/plugins/bdevs-elementor/).
+You'll find answers to many of your questions on (http://torsdev.net/plugins/torsdev-elementor/).
 
 
 == Changelog ==

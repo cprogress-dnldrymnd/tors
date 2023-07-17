@@ -27,7 +27,7 @@ class TorsDevBlog extends \Elementor\Widget_Base {
      * @return string Widget name.
      */
     public function get_name() {
-        return 'bdevs-blog';
+        return 'torsdev-blog';
     }
 
     /**
@@ -41,7 +41,7 @@ class TorsDevBlog extends \Elementor\Widget_Base {
      * @return string Widget title.
      */
     public function get_title() {
-        return __( 'Blog', 'bdevs-elementor' );
+        return __( 'Blog', 'torsdev-elementor' );
     }
 
     /**
@@ -69,7 +69,7 @@ class TorsDevBlog extends \Elementor\Widget_Base {
      * @return array Widget categories.
      */
     public function get_categories() {
-        return [ 'bdevs-elementor' ];
+        return [ 'torsdev-elementor' ];
     }
 
     public function get_keywords() {
@@ -77,22 +77,22 @@ class TorsDevBlog extends \Elementor\Widget_Base {
     }
 
     public function get_script_depends() {
-        return [ 'bdevs-elementor'];
+        return [ 'torsdev-elementor'];
     }
 
     // BDT Position
     protected function element_pack_position() {
         $position_options = [
-            ''              => esc_html__('Default', 'bdevs-elementor'),
-            'top-left'      => esc_html__('Top Left', 'bdevs-elementor') ,
-            'top-center'    => esc_html__('Top Center', 'bdevs-elementor') ,
-            'top-right'     => esc_html__('Top Right', 'bdevs-elementor') ,
-            'center'        => esc_html__('Center', 'bdevs-elementor') ,
-            'center-left'   => esc_html__('Center Left', 'bdevs-elementor') ,
-            'center-right'  => esc_html__('Center Right', 'bdevs-elementor') ,
-            'bottom-left'   => esc_html__('Bottom Left', 'bdevs-elementor') ,
-            'bottom-center' => esc_html__('Bottom Center', 'bdevs-elementor') ,
-            'bottom-right'  => esc_html__('Bottom Right', 'bdevs-elementor') ,
+            ''              => esc_html__('Default', 'torsdev-elementor'),
+            'top-left'      => esc_html__('Top Left', 'torsdev-elementor') ,
+            'top-center'    => esc_html__('Top Center', 'torsdev-elementor') ,
+            'top-right'     => esc_html__('Top Right', 'torsdev-elementor') ,
+            'center'        => esc_html__('Center', 'torsdev-elementor') ,
+            'center-left'   => esc_html__('Center Left', 'torsdev-elementor') ,
+            'center-right'  => esc_html__('Center Right', 'torsdev-elementor') ,
+            'bottom-left'   => esc_html__('Bottom Left', 'torsdev-elementor') ,
+            'bottom-center' => esc_html__('Bottom Center', 'torsdev-elementor') ,
+            'bottom-right'  => esc_html__('Bottom Right', 'torsdev-elementor') ,
         ];
 
         return $position_options;
@@ -102,47 +102,47 @@ class TorsDevBlog extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content_heading',
             [
-                'label' => esc_html__( 'Blog', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Blog', 'torsdev-elementor' ),
             ]   
         );
         $this->add_control(
             'subheading',
             [
-                'label'       => __( 'Subheading:', 'bdevs-elementor' ),
+                'label'       => __( 'Subheading:', 'torsdev-elementor' ),
                 'type'        => Controls_Manager::TEXT,
-                'placeholder' => __( 'Enter your subheading', 'bdevs-elementor' ),
-                'default'     => __( 'This is subheading ', 'bdevs-elementor' ),
+                'placeholder' => __( 'Enter your subheading', 'torsdev-elementor' ),
+                'default'     => __( 'This is subheading ', 'torsdev-elementor' ),
                 'label_block' => true,
             ]
         );
         $this->add_control(
             'heading',
             [
-                'label'       => __( 'Heading:', 'bdevs-elementor' ),
+                'label'       => __( 'Heading:', 'torsdev-elementor' ),
                 'type'        => Controls_Manager::TEXT,
-                'placeholder' => __( 'Enter your heading', 'bdevs-elementor' ),
-                'default'     => __( 'This is heading ', 'bdevs-elementor' ),
+                'placeholder' => __( 'Enter your heading', 'torsdev-elementor' ),
+                'default'     => __( 'This is heading ', 'torsdev-elementor' ),
                 'label_block' => true,
             ]
         );
         $this->add_control(
             'posts_per_page',
             [
-                'label'       => __( 'Posts Per Page:', 'bdevs-elementor' ),
+                'label'       => __( 'Posts Per Page:', 'torsdev-elementor' ),
                 'type'        => Controls_Manager::TEXT,
-                'placeholder' => __( 'Enter your posts per page', 'bdevs-elementor' ),
-                'default'     => __( '3', 'bdevs-elementor' ),
+                'placeholder' => __( 'Enter your posts per page', 'torsdev-elementor' ),
+                'default'     => __( '3', 'torsdev-elementor' ),
                 'label_block' => true,
             ]
         );
         $this->add_control(
             'sortby',
             [
-                'label'     => esc_html__( 'Order', 'bdevs-elementor' ),
+                'label'     => esc_html__( 'Order', 'torsdev-elementor' ),
                 'type'      => Controls_Manager::SELECT,
                 'options'   => [
-                    'sortby_style_1'  => esc_html__( 'Newest', 'bdevs-elementor' ),
-                    'sortby_style_2'  => esc_html__( 'Oldest', 'bdevs-elementor' ),
+                    'sortby_style_1'  => esc_html__( 'Newest', 'torsdev-elementor' ),
+                    'sortby_style_2'  => esc_html__( 'Oldest', 'torsdev-elementor' ),
                 ],
                 'default'   => 'sortby_style_1',
             ]
@@ -150,9 +150,9 @@ class TorsDevBlog extends \Elementor\Widget_Base {
         $this->add_control(
             'link_button',
             [
-                'label'       => __( 'Link Button:', 'bdevs-elementor' ),
+                'label'       => __( 'Link Button:', 'torsdev-elementor' ),
                 'type'        => Controls_Manager::TEXT,
-                'placeholder' => __( 'Enter link button', 'bdevs-elementor' ),
+                'placeholder' => __( 'Enter link button', 'torsdev-elementor' ),
                 'default'     => __( '#' ),
                 'label_block' => true,
             ]
@@ -160,9 +160,9 @@ class TorsDevBlog extends \Elementor\Widget_Base {
         $this->add_control(
             'button',
             [
-                'label'       => __( 'Button:', 'bdevs-elementor' ),
+                'label'       => __( 'Button:', 'torsdev-elementor' ),
                 'type'        => Controls_Manager::TEXT,
-                'placeholder' => __( 'Enter button', 'bdevs-elementor' ),
+                'placeholder' => __( 'Enter button', 'torsdev-elementor' ),
                 'default'     => __( 'View more Blogs' ),
                 'label_block' => true,
             ]
@@ -175,30 +175,30 @@ class TorsDevBlog extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content_layout',
             [
-                'label' => esc_html__( 'Layout', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Layout', 'torsdev-elementor' ),
             ]
         );
 
         $this->add_responsive_control(
             'align',
             [
-                'label'   => esc_html__( 'Alignment', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Alignment', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Left', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Center', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Right', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justified', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Justified', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-justify',
                     ],
                 ],
@@ -210,7 +210,7 @@ class TorsDevBlog extends \Elementor\Widget_Base {
         $this->add_control(
             'show_subheading',
             [
-                'label'   => esc_html__( 'Show Subheading', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Show Subheading', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::SWITCHER,
                 'default' => 'yes',
             ]
@@ -218,7 +218,7 @@ class TorsDevBlog extends \Elementor\Widget_Base {
         $this->add_control(
             'show_heading',
             [
-                'label'   => esc_html__( 'Show Heading', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Show Heading', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::SWITCHER,
                 'default' => 'yes',
             ]

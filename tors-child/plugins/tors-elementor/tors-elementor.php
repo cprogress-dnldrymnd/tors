@@ -6,7 +6,7 @@
  * Version:     1.0.0
  * Author:      Nasir Uddin Mandal
  * Author URI:  http://shtheme.com
- * Text Domain: bdevs-elementor
+ * Text Domain: torsdev-elementor
  * Domain Path: /languages/
  */
 
@@ -114,7 +114,7 @@ final class TorsDevElementor
 	public function i18n()
 	{
 
-		load_plugin_textdomain('bdevs-elementor');
+		load_plugin_textdomain('torsdev-elementor');
 
 	}
 
@@ -183,9 +183,9 @@ final class TorsDevElementor
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor */
-			esc_html__('"%1$s" requires "%2$s" to be installed and activated.', 'bdevs-elementor'),
-			'<strong>' . esc_html__('tors Elementor', 'bdevs-elementor') . '</strong>',
-			'<strong>' . esc_html__('Elementor', 'bdevs-elementor') . '</strong>'
+			esc_html__('"%1$s" requires "%2$s" to be installed and activated.', 'torsdev-elementor'),
+			'<strong>' . esc_html__('tors Elementor', 'torsdev-elementor') . '</strong>',
+			'<strong>' . esc_html__('Elementor', 'torsdev-elementor') . '</strong>'
 		);
 
 		printf('<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message);
@@ -209,9 +209,9 @@ final class TorsDevElementor
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: Elementor 3: Required Elementor version */
-			esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'bdevs-elementor'),
-			'<strong>' . esc_html__('tors Elementor', 'bdevs-elementor') . '</strong>',
-			'<strong>' . esc_html__('Elementor', 'bdevs-elementor') . '</strong>',
+			esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'torsdev-elementor'),
+			'<strong>' . esc_html__('tors Elementor', 'torsdev-elementor') . '</strong>',
+			'<strong>' . esc_html__('Elementor', 'torsdev-elementor') . '</strong>',
 			self::MINIMUM_ELEMENTOR_VERSION
 		);
 
@@ -236,9 +236,9 @@ final class TorsDevElementor
 
 		$message = sprintf(
 			/* translators: 1: Plugin name 2: PHP 3: Required PHP version */
-			esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'bdevs-elementor'),
-			'<strong>' . esc_html__('tors Elementor', 'bdevs-elementor') . '</strong>',
-			'<strong>' . esc_html__('PHP', 'bdevs-elementor') . '</strong>',
+			esc_html__('"%1$s" requires "%2$s" version %3$s or greater.', 'torsdev-elementor'),
+			'<strong>' . esc_html__('tors Elementor', 'torsdev-elementor') . '</strong>',
+			'<strong>' . esc_html__('PHP', 'torsdev-elementor') . '</strong>',
 			self::MINIMUM_PHP_VERSION
 		);
 
@@ -252,9 +252,9 @@ final class TorsDevElementor
 	public function add_elementor_category()
 	{
 		\Elementor\Plugin::instance()->elements_manager->add_category(
-			'bdevs-elementor',
+			'torsdev-elementor',
 			array(
-				'title' => __('tors Elementor', 'bdevs-elementor'),
+				'title' => __('tors Elementor', 'torsdev-elementor'),
 				'icon'  => 'fa fa-plug',
 			)
 		);
@@ -266,7 +266,7 @@ final class TorsDevElementor
 	 */
 	public function register_frontend_scripts()
 	{
-		wp_register_script('bdevs-elementor', plugin_dir_url(__FILE__) . 'assets/js/bdevs-elementor.js', array('jquery'), self::VERSION);
+		wp_register_script('torsdev-elementor', plugin_dir_url(__FILE__) . 'assets/js/torsdev-elementor.js', array('jquery'), self::VERSION);
 	}
 
 	/**
@@ -275,7 +275,7 @@ final class TorsDevElementor
 	 */
 	public function register_frontend_styles()
 	{
-		wp_register_style('bdevs-elementor', plugin_dir_url(__FILE__) . 'assets/css/bdevs-elementor.css', self::VERSION);
+		wp_register_style('torsdev-elementor', plugin_dir_url(__FILE__) . 'assets/css/torsdev-elementor.css', self::VERSION);
 	}
 
 

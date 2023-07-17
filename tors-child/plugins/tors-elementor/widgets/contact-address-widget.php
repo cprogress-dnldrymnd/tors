@@ -27,7 +27,7 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
      * @return string Widget name.
      */
     public function get_name() {
-        return 'bdevs-contact-address';
+        return 'torsdev-contact-address';
     }
 
     /**
@@ -41,7 +41,7 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
      * @return string Widget title.
      */
     public function get_title() {
-        return __( 'Contact Address', 'bdevs-elementor' );
+        return __( 'Contact Address', 'torsdev-elementor' );
     }
 
     /**
@@ -69,7 +69,7 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
      * @return array Widget categories.
      */
     public function get_categories() {
-        return [ 'bdevs-elementor' ];
+        return [ 'torsdev-elementor' ];
     }
 
     public function get_keywords() {
@@ -77,22 +77,22 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
     }
 
     public function get_script_depends() {
-        return [ 'bdevs-elementor'];
+        return [ 'torsdev-elementor'];
     }
 
     // BDT Position
     protected function element_pack_position() {
         $position_options = [
-            ''              => esc_html__('Default', 'bdevs-elementor'),
-            'top-left'      => esc_html__('Top Left', 'bdevs-elementor') ,
-            'top-center'    => esc_html__('Top Center', 'bdevs-elementor') ,
-            'top-right'     => esc_html__('Top Right', 'bdevs-elementor') ,
-            'center'        => esc_html__('Center', 'bdevs-elementor') ,
-            'center-left'   => esc_html__('Center Left', 'bdevs-elementor') ,
-            'center-right'  => esc_html__('Center Right', 'bdevs-elementor') ,
-            'bottom-left'   => esc_html__('Bottom Left', 'bdevs-elementor') ,
-            'bottom-center' => esc_html__('Bottom Center', 'bdevs-elementor') ,
-            'bottom-right'  => esc_html__('Bottom Right', 'bdevs-elementor') ,
+            ''              => esc_html__('Default', 'torsdev-elementor'),
+            'top-left'      => esc_html__('Top Left', 'torsdev-elementor') ,
+            'top-center'    => esc_html__('Top Center', 'torsdev-elementor') ,
+            'top-right'     => esc_html__('Top Right', 'torsdev-elementor') ,
+            'center'        => esc_html__('Center', 'torsdev-elementor') ,
+            'center-left'   => esc_html__('Center Left', 'torsdev-elementor') ,
+            'center-right'  => esc_html__('Center Right', 'torsdev-elementor') ,
+            'bottom-left'   => esc_html__('Bottom Left', 'torsdev-elementor') ,
+            'bottom-center' => esc_html__('Bottom Center', 'torsdev-elementor') ,
+            'bottom-right'  => esc_html__('Bottom Right', 'torsdev-elementor') ,
         ];
 
         return $position_options;
@@ -103,47 +103,47 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content_heading',
             [
-                'label' => esc_html__( 'Contact Address', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Contact Address', 'torsdev-elementor' ),
             ]   
         );
         $this->add_control(
             'heading',
             [
-                'label'       => __( 'Heading:', 'bdevs-elementor' ),
+                'label'       => __( 'Heading:', 'torsdev-elementor' ),
                 'type'        => Controls_Manager::TEXT,
-                'placeholder' => __( 'Enter your heading', 'bdevs-elementor' ),
-                'default'     => __( 'This is heading ', 'bdevs-elementor' ),
+                'placeholder' => __( 'Enter your heading', 'torsdev-elementor' ),
+                'default'     => __( 'This is heading ', 'torsdev-elementor' ),
                 'label_block' => true,
             ]
         );        
          $this->add_control(
             'tabs',
             [
-                'label' => esc_html__( 'Items', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Items', 'torsdev-elementor' ),
                 'type' => Controls_Manager::REPEATER,
                 'fields' => [
                     [
                         'name'        => 'icon',
-                        'label'       => esc_html__( 'Icon:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Icon:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXT,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( 'This is icon' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( 'This is icon' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                     [
                         'name'        => 'title',
-                        'label'       => esc_html__( 'Title:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Title:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXT,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( 'This is title' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( 'This is title' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                     [
                         'name'        => 'content',
-                        'label'       => esc_html__( 'Content:', 'bdevs-elementor' ),
+                        'label'       => esc_html__( 'Content:', 'torsdev-elementor' ),
                         'type'        => Controls_Manager::TEXTAREA,
                         'dynamic'     => [ 'active' => true ],
-                        'default'     => esc_html__( 'This is content' , 'bdevs-elementor' ),
+                        'default'     => esc_html__( 'This is content' , 'torsdev-elementor' ),
                         'label_block' => true,
                     ],
                 ],
@@ -157,30 +157,30 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
         $this->start_controls_section(
             'section_content_layout',
             [
-                'label' => esc_html__( 'Layout', 'bdevs-elementor' ),
+                'label' => esc_html__( 'Layout', 'torsdev-elementor' ),
             ]
         );
 
         $this->add_responsive_control(
             'align',
             [
-                'label'   => esc_html__( 'Alignment', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Alignment', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => esc_html__( 'Left', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Left', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Center', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Right', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                     'justify' => [
-                        'title' => esc_html__( 'Justified', 'bdevs-elementor' ),
+                        'title' => esc_html__( 'Justified', 'torsdev-elementor' ),
                         'icon'  => 'fa fa-align-justify',
                     ],
                 ],
@@ -192,7 +192,7 @@ class TorsDevContactAddress extends \Elementor\Widget_Base {
         $this->add_control(
             'show_heading',
             [
-                'label'   => esc_html__( 'Show Heading', 'bdevs-elementor' ),
+                'label'   => esc_html__( 'Show Heading', 'torsdev-elementor' ),
                 'type'    => Controls_Manager::SWITCHER,
                 'default' => 'yes',
             ]
