@@ -402,7 +402,8 @@ section.home-about-area .content ul + a {
     border-color: #333333;
     background-color: #333333;
     color: #fff; }
-.button-box.button-white {
+.button-box.button-white > a,
+.button-box.button-white button {
   background-color: var(--white-color); }
 
 .home-blog-contents.home-blog-contents {

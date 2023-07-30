@@ -542,7 +542,11 @@ section.home-about-area .content ul+a {
   }
 
   &.button-white {
-    background-color: var(--white-color);
+
+    >a,
+    button {
+      background-color: var(--white-color);
+    }
   }
 }
 
