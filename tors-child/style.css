@@ -511,11 +511,23 @@ section.home-about-area .content ul + a {
 @media (min-width: 992px) {
   .header-area.header-area #menu-toggle {
     display: none; } }
-.header-area.header-area .menu {
+.header-area.header-area nav .menu {
   display: block !important;
-  background-color: transparent; }
+  background-color: transparent;
+  opacity: 1;
+  visibility: visible;
+  transform: none; }
+  .header-area.header-area nav .menu li {
+    opacity: 1;
+    visibility: visible;
+    transform: none; }
+    .header-area.header-area nav .menu li a {
+      color: var(--white-color);
+      font-size: 20px; }
+    .header-area.header-area nav .menu li:not(:last-child) {
+      margin-right: 30px; }
   @media (max-width: 991px) {
-    .header-area.header-area .menu {
+    .header-area.header-area nav .menu {
       display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */

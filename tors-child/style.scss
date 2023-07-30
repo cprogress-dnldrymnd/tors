@@ -703,11 +703,32 @@ section.home-about-area .content ul+a {
       display: none;
     }
   }
-  .menu {
-    display: block !important;
-    background-color: transparent;
-    @media(max-width: 991px) {
-      display: none !important;
+
+  nav {
+    .menu {
+      display: block !important;
+      background-color: transparent;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+
+      li {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        a {
+          color: var(--white-color);
+          font-size: 20px;
+        }
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      @media(max-width: 991px) {
+        display: none !important;
+      }
     }
   }
+
 }
