@@ -441,4 +441,10 @@ section.home-about-area .content ul + a {
   background-image: none;
   padding-top: 35px; }
 
+.d-flex {
+  display: flex; }
+
+.align-items-center {
+  align-items: center; }
+
 /*# sourceMappingURL=style.css.map */
