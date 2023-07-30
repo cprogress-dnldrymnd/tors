@@ -3,19 +3,20 @@
     ====================================================== -->
 <footer class="footer-area">
     <!-- Start:Footer Main Contents-->
-    <div class="container">
-        <div class="footer-contents">
-            <!-- Start:Footer Top Content Area (Supporters) -->
-            <div class="footer-top-sec">
+    <div class="footer-contents">
+        <!-- Start:Footer Top Content Area (Supporters) -->
+        <div class="footer-top-sec">
+            <div class="container">
                 <?php if (is_active_sidebar('footer-area-1')): ?>
                     <?php dynamic_sidebar('footer-area-1'); ?>
                 <?php endif; ?>
             </div>
-            <!-- End:Footer Top Content Area (Supporters) -->
-            <!-- Start:Footer Bottom Content Area  -->
-            <div class="footer-middle-sec">
+        </div>
+        <!-- End:Footer Top Content Area (Supporters) -->
+        <!-- Start:Footer Bottom Content Area  -->
+        <div class="footer-middle-sec">
+            <div class="container">
                 <!-- Start:Logo Sec-->
-
                 <?php
                 $i = 0;
                 if (is_active_sidebar('footer-area-2')) {
@@ -57,17 +58,16 @@
                 <!-- Start:News Letter Area -->
                 <?php if (is_active_sidebar('footer-area-5')): ?>
                     <!-- Start:Social Icon Area -->
-                    <div class="class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                        <div class="social-icon">
-                            <?php dynamic_sidebar('footer-area-5'); ?>
-                        </div>
+                    <div class="class=" <?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
+                                                    <div class=" social-icon">
+                        <?php dynamic_sidebar('footer-area-5'); ?>
                     </div>
-                <?php endif; ?>
-
-                <!-- End:Social Icon Area -->
-            </div>
-            <!-- End:Footer Bottom Content Area -->
+                </div>
+            <?php endif; ?>
+            <!-- End:Social Icon Area -->
         </div>
+    </div>
+    <!-- End:Footer Bottom Content Area -->
     </div>
     <!-- Start:Footer Main Contents-->
     <!-- Start:Copyright Area -->
