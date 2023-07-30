@@ -517,24 +517,25 @@ section.home-about-area .content ul + a {
     display: none; } }
 .header-area.header-area nav {
   position: static; }
-  .header-area.header-area nav .menu {
+  .header-area.header-area nav > .menu {
     display: block !important;
     background-color: transparent;
     opacity: 1;
     visibility: visible;
     transform: none;
-    margin-bottom: 0; }
-    .header-area.header-area nav .menu li {
+    margin-bottom: 0;
+    float: none; }
+    .header-area.header-area nav > .menu > li {
       opacity: 1;
       visibility: visible;
       transform: none; }
-      .header-area.header-area nav .menu li a {
+      .header-area.header-area nav > .menu > li a {
         color: var(--white-color);
         font-size: 20px; }
-      .header-area.header-area nav .menu li:not(:last-child) {
+      .header-area.header-area nav > .menu > li:not(:last-child) {
         margin-right: 30px; }
     @media (max-width: 767px) {
-      .header-area.header-area nav .menu {
+      .header-area.header-area nav > .menu {
         display: none !important; } }
 .header-area.header-area.navbar-fixed-top .logo-anchor {
   color: var(--e-global-color-cea108a); }

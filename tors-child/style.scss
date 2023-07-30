@@ -711,14 +711,15 @@ section.home-about-area .content ul+a {
 
   nav {
     position: static;
-    .menu {
+    > .menu {
       display: block !important;
       background-color: transparent;
       opacity: 1;
       visibility: visible;
       transform: none;
       margin-bottom: 0;
-      li {
+      float: none;
+      > li {
         opacity: 1;
         visibility: visible;
         transform: none;
