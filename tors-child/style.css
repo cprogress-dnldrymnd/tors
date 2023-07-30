@@ -413,9 +413,13 @@ section.home-about-area .content ul + a {
   color: #fff; }
 
 .home-blog-contents h2,
-.home-about-area .features-contents, .home-blog-items li .text-content h3 {
+.home-about-area .features-contents,
+.home-blog-items li .text-content h3 {
   font-size: 36px !important;
   text-transform: initial; }
+
+.home-blog-items li .text-content h3 {
+  margin-bottom: 20px; }
 
 .home-blog-items li .text-content span a {
   color: var(--white-color);
