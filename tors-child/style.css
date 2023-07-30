@@ -432,6 +432,7 @@ section.home-about-area .content ul + a {
 
 .button-large.button-large {
   background-color: var(--e-global-color-accent);
+  color: var(--e-global-color-text);
   border-color: var(--e-global-color-accent); }
 
 .footer-area.footer-area {
