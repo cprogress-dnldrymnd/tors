@@ -602,8 +602,12 @@ section.home-about-area .content ul+a {
   align-items: center;
 }
 .logo-box {
+  .logo-img {
+    margin-right: 1rem;
+  }
   .text {
     font-size: 30px;
     font-weight: bold;
+    color: var(--white-color);
   }
 }
