@@ -7,7 +7,10 @@ Template: tors
 Version: 1.0
 Text Domain:  tors-child
 */
-
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+}
 $font-url: "./assets/fonts/" !default;
 
 @mixin font-face($fontFamily, $path, $fileName, $fontStyle: normal, $fontWeight: false) {

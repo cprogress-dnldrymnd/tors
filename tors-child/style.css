@@ -7,6 +7,10 @@ Template: tors
 Version: 1.0
 Text Domain:  tors-child
 */
+:root {
+  --white-color: #fff;
+  --black-color: #000; }
+
 @font-face {
   font-family: "CircularStd";
   src: url("./assets/fonts/CircularStd/CircularStd-Book.eot");
