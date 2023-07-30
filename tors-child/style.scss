@@ -626,9 +626,11 @@ section.home-about-area .content ul+a {
     font-weight: 500;
   }
 
-  a {
-    color: var(--white-color);
-    font-size: 20px;
+  .footer-middle-sec {
+    a {
+      color: var(--white-color);
+      font-size: 20px;
+    }
   }
 
   .menu {
@@ -644,7 +646,8 @@ section.home-about-area .content ul+a {
     display: inline-flex;
     font-size: 20px;
     background-color: var(--white-color);
-    color: var(----e-global-color-cea108a);;
+    color: var(----e-global-color-cea108a);
+    ;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
