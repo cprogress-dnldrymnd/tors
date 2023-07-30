@@ -669,27 +669,27 @@ section.home-about-area .content ul+a {
 .container {
   &.large-container {
     @media (min-width: 1300px) {
-      width: 1270px;
+      max-width: 1270px;
     }
 
     @media (min-width: 1400px) {
-      width: 1370px;
+      max-width: 1370px;
     }
 
     @media (min-width: 1500px) {
-      width: 1470px;
+      max-width: 1470px;
     }
 
     @media (min-width: 1600px) {
-      width: 1570px;
+      max-width: 1570px;
     }
 
     @media (min-width: 1700px) {
-      width: 1670px;
+      max-width: 1670px;
     }
 
     @media (min-width: 1700px) {
-      width: 1770px;
+      max-width: 1770px;
     }
   }
 }
