@@ -26,17 +26,16 @@
     <!-- Header Area Start 
     ====================================================== -->
     <header class="header-area">
-        <div class="container">
+        <div class="container large-container">
             <div class="top-bar">
                 <!-- Start: Top Logo -->
-                <div class="col-md-2 logobar">
+                <div class="col-md-5 logobar">
                     <div class="logo">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
                             <div class="logo-box d-flex align-items-center">
                                 <span class="logo-img">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        width="56" height="57" viewBox="0 0 56 57"
-                                        style="&#10;    background: red;&#10;">
+                                        width="56" height="57" viewBox="0 0 56 57">
                                         <defs>
                                             <clipPath id="clip-path">
                                                 <rect id="Rectangle_183" data-name="Rectangle 183" width="56"
@@ -64,7 +63,7 @@
                 </div>
                 <!-- End: Top Logo -->
                 <!-- Start:Navigation Area -->
-                <div class="col-md-10 menubar">
+                <div class="col-md-7 menubar">
                     <!-- Start:Main Navigation -->
                     <div id="menu-toggle"><i class="fa fa-bars"></i></div>
                     <nav>
