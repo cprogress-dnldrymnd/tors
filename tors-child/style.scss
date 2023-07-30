@@ -652,9 +652,11 @@ section.home-about-area .content ul+a {
     }
   }
 }
+
 .logo-anchor {
   color: var(--white-color);
 }
+
 .social-box {
   margin-top: 10px;
 
@@ -719,10 +721,12 @@ section.home-about-area .content ul+a {
         opacity: 1;
         visibility: visible;
         transform: none;
+
         a {
           color: var(--white-color);
           font-size: 20px;
         }
+
         &:not(:last-child) {
           margin-right: 30px;
         }
@@ -735,7 +739,19 @@ section.home-about-area .content ul+a {
   }
 
   &.navbar-fixed-top {
+    .logo-anchor {
+      color: var(--e-global-color-cea108a);
+    }
 
+    .logo-box {
+      .text {
+        color: var(--e-global-color-cea108a);
+      }
+    }
+
+    .header-area.header-area nav .menu li a {
+      color: var(--e-global-color-cea108a);
+    }
   }
 
 }
