@@ -629,7 +629,8 @@ section.home-about-area .content ul+a {
   }
 
   .footer-middle-sec {
-        padding-top: 10px;
+    padding-top: 10px;
+
     a {
       color: var(--white-color);
       font-size: 20px;
@@ -650,6 +651,7 @@ section.home-about-area .content ul+a {
 
 .social-box {
   margin-top: 10px;
+
   a {
     height: 28px;
     width: 28px;
@@ -661,5 +663,33 @@ section.home-about-area .content ul+a {
     justify-content: center;
     margin-right: 10px;
     border-radius: 3px;
+  }
+}
+
+.container {
+  &.large-container {
+    @media (min-width: 1300px) {
+      width: 1270px;
+    }
+
+    @media (min-width: 1400px) {
+      width: 1370px;
+    }
+
+    @media (min-width: 1500px) {
+      width: 1470px;
+    }
+
+    @media (min-width: 1600px) {
+      width: 1570px;
+    }
+
+    @media (min-width: 1700px) {
+      width: 1670px;
+    }
+
+    @media (min-width: 1700px) {
+      width: 1770px;
+    }
   }
 }
