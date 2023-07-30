@@ -454,4 +454,7 @@ section.home-about-area .content ul + a {
   font-weight: bold;
   color: var(--white-color); }
 
+.copyright {
+  font-size: 20px; }
+
 /*# sourceMappingURL=style.css.map */
