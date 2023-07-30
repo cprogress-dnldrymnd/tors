@@ -548,6 +548,8 @@ section.home-about-area .content ul+a {
 }
 
 .home-blog-contents h2,
-.home-about-area .features-contents {
+.home-about-area .features-contents, .home-blog-items li .text-content h3 {
   font-size: 36px !important;
+  text-transform: initial;
 }
+
