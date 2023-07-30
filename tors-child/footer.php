@@ -6,7 +6,7 @@
     <div class="footer-contents">
         <!-- Start:Footer Top Content Area (Supporters) -->
         <div class="footer-top-sec">
-            <div class="container">
+            <div class="container large-container">
                 <?php if (is_active_sidebar('footer-area-1')): ?>
                     <?php dynamic_sidebar('footer-area-1'); ?>
                 <?php endif; ?>
@@ -59,7 +59,7 @@
                 <?php if (is_active_sidebar('footer-area-5')): ?>
                     <!-- Start:Social Icon Area -->
                     <div class="class=" <?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                                                    <div class=" social-icon">
+                                                        <div class=" social-icon">
                         <?php dynamic_sidebar('footer-area-5'); ?>
                     </div>
                 </div>
