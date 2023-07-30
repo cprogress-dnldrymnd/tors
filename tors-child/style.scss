@@ -624,7 +624,7 @@ section.home-about-area .content ul+a {
   h2 {
     font-size: 25px;
     font-weight: 500;
-        line-height: 1;
+    line-height: 1;
   }
 
   .footer-middle-sec {
@@ -637,6 +637,7 @@ section.home-about-area .content ul+a {
   .menu {
     display: block !important;
     padding-left: 0;
+
     li {
       &:not(:last-child) {
         margin-bottom: 10px;
@@ -646,6 +647,7 @@ section.home-about-area .content ul+a {
 }
 
 .social-box {
+  margin-top: 10px;
   a {
     height: 28px;
     width: 28px;
@@ -656,6 +658,6 @@ section.home-about-area .content ul+a {
     align-items: center;
     justify-content: center;
     margin-right: 10px;
-        border-radius: 3px;
+    border-radius: 3px;
   }
 }

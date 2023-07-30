@@ -471,16 +471,18 @@ section.home-about-area .content ul + a {
   .footer-contents.footer-contents .menu li:not(:last-child) {
     margin-bottom: 10px; }
 
-.social-box a {
-  height: 28px;
-  width: 28px;
-  display: inline-flex;
-  font-size: 20px;
-  background-color: var(--white-color);
-  color: var(--e-global-color-cea108a) !important;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  border-radius: 3px; }
+.social-box {
+  margin-top: 10px; }
+  .social-box a {
+    height: 28px;
+    width: 28px;
+    display: inline-flex;
+    font-size: 20px;
+    background-color: var(--white-color);
+    color: var(--e-global-color-cea108a) !important;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */
