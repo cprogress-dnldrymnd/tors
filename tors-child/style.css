@@ -456,8 +456,9 @@ section.home-about-area .content ul + a {
   color: var(--white-color); }
 
 .copyright.copyright {
-  font-size: 20px;
   background-color: var(--e-global-color-cea108a); }
+  .copyright.copyright p {
+    font-size: 20px; }
 
 .footer-contents.footer-contents h2 {
   font-size: 25px;

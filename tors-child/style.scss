@@ -617,8 +617,11 @@ section.home-about-area .content ul+a {
 }
 
 .copyright.copyright {
-  font-size: 20px;
   background-color: var(--e-global-color-cea108a);
+
+  p {
+    font-size: 20px;
+  }
 }
 
 .footer-contents.footer-contents {
