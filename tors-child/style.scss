@@ -696,3 +696,18 @@ section.home-about-area .content ul+a {
     }
   }
 }
+
+.header-area.header-area {
+  #menu-toggle {
+    @media(min-width: 992px) {
+      display: none;
+    }
+  }
+  .menu {
+    display: block !important;
+    background-color: transparent;
+    @media(max-width: 991px) {
+      display: none !important;
+    }
+  }
+}

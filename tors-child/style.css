@@ -508,4 +508,14 @@ section.home-about-area .content ul + a {
   .container.large-container {
     max-width: 1770px; } }
 
+@media (min-width: 992px) {
+  .header-area.header-area #menu-toggle {
+    display: none; } }
+.header-area.header-area .menu {
+  display: block !important;
+  background-color: transparent; }
+  @media (max-width: 991px) {
+    .header-area.header-area .menu {
+      display: none !important; } }
+
 /*# sourceMappingURL=style.css.map */
