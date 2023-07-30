@@ -701,3 +701,66 @@ section.home-about-area .content ul+a {
     }
   }
 }
+
+.header-area.header-area {
+  #menu-toggle {
+    @media(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  nav {
+    position: static;
+    .menu {
+      display: block !important;
+      background-color: transparent;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      margin-bottom: 0;
+      li {
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+
+        a {
+          color: var(--white-color);
+          font-size: 20px;
+        }
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      @media(max-width: 767px) {
+        display: none !important;
+      }
+    }
+  }
+
+  &.navbar-fixed-top {
+    .logo-anchor {
+      color: var(--e-global-color-cea108a);
+    }
+
+    .logo-box {
+      .text {
+        color: var(--e-global-color-cea108a);
+      }
+    }
+
+    nav .menu li a {
+      color: var(--e-global-color-cea108a);
+    }
+  }
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  &:before, &:after {
+    content: none;
+  }
+}
