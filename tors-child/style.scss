@@ -716,7 +716,7 @@ section.home-about-area .content ul+a {
       opacity: 1;
       visibility: visible;
       transform: none;
-
+      margin-bottom: 0;
       li {
         opacity: 1;
         visibility: visible;
@@ -754,4 +754,12 @@ section.home-about-area .content ul+a {
     }
   }
 
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  &:before, &:after {
+    content: none;
+  }
 }
