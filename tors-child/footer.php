@@ -16,55 +16,57 @@
         <!-- Start:Footer Bottom Content Area  -->
         <div class="footer-middle-sec">
             <div class="container">
-                <!-- Start:Logo Sec-->
-                <?php
-                $i = 0;
-                if (is_active_sidebar('footer-area-2')) {
-                    $i++;
-                }
-                if (is_active_sidebar('footer-area-3')) {
-                    $i++;
-                }
-                if (is_active_sidebar('footer-area-4')) {
-                    $i++;
-                }
-                if (is_active_sidebar('footer-area-5')) {
-                    $i++;
-                }
-                ?>
-                <?php if (is_active_sidebar('footer-area-2')): ?>
-                    <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                        <div class="logo">
-                            <?php dynamic_sidebar('footer-area-2'); ?>
+                <div class="row">
+                    <!-- Start:Logo Sec-->
+                    <?php
+                    $i = 0;
+                    if (is_active_sidebar('footer-area-2')) {
+                        $i++;
+                    }
+                    if (is_active_sidebar('footer-area-3')) {
+                        $i++;
+                    }
+                    if (is_active_sidebar('footer-area-4')) {
+                        $i++;
+                    }
+                    if (is_active_sidebar('footer-area-5')) {
+                        $i++;
+                    }
+                    ?>
+                    <?php if (is_active_sidebar('footer-area-2')): ?>
+                        <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
+                            <div class="logo">
+                                <?php dynamic_sidebar('footer-area-2'); ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+
+                    <!-- Start:Logo Sec -->
+                    <!-- Start:Quick Links -->
+                    <?php if (is_active_sidebar('footer-area-3')): ?>
+                        <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
+                            <?php dynamic_sidebar('footer-area-3'); ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <!-- End:Quick Links -->
+                    <!-- Start:News Letter Area -->
+                    <?php if (is_active_sidebar('footer-area-4')): ?>
+                        <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
+                            <?php dynamic_sidebar('footer-area-4'); ?>
+                        </div>
+                    <?php endif; ?>
+                    <!-- Start:News Letter Area -->
+                    <?php if (is_active_sidebar('footer-area-5')): ?>
+                        <!-- Start:Social Icon Area -->
+                        <div class="class=" <?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
+                                                            <div class=" social-icon">
+                            <?php dynamic_sidebar('footer-area-5'); ?>
                         </div>
                     </div>
                 <?php endif; ?>
-
-                <!-- Start:Logo Sec -->
-                <!-- Start:Quick Links -->
-                <?php if (is_active_sidebar('footer-area-3')): ?>
-                    <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                        <?php dynamic_sidebar('footer-area-3'); ?>
-                    </div>
-                <?php endif; ?>
-
-                <!-- End:Quick Links -->
-                <!-- Start:News Letter Area -->
-                <?php if (is_active_sidebar('footer-area-4')): ?>
-                    <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                        <?php dynamic_sidebar('footer-area-4'); ?>
-                    </div>
-                <?php endif; ?>
-                <!-- Start:News Letter Area -->
-                <?php if (is_active_sidebar('footer-area-5')): ?>
-                    <!-- Start:Social Icon Area -->
-                    <div class="class=" <?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                                                        <div class=" social-icon">
-                        <?php dynamic_sidebar('footer-area-5'); ?>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <!-- End:Social Icon Area -->
+                <!-- End:Social Icon Area -->
+            </div>
         </div>
     </div>
     <!-- End:Footer Bottom Content Area -->
