@@ -30,6 +30,7 @@
                 if (is_active_sidebar('footer-area-5')) {
                     $i++;
                 }
+                echo $i;
                 ?>
                 <?php if (is_active_sidebar('footer-area-2')): ?>
                     <div class="<?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
