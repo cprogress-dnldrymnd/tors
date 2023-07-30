@@ -468,4 +468,15 @@ section.home-about-area .content ul + a {
   display: block !important;
   padding-left: 0; }
 
+.social-box a {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  font-size: 20px;
+  background-color: var(--white-color);
+  color: var(----e-global-color-cea108a);
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px; }
+
 /*# sourceMappingURL=style.css.map */
