@@ -453,7 +453,8 @@ section.home-about-area .content ul + a {
 .logo-box .text {
   font-size: 30px;
   font-weight: bold;
-  color: var(--white-color); }
+  color: var(--white-color);
+  line-height: 1.2; }
 
 .copyright.copyright {
   background-color: var(--e-global-color-cea108a); }
