@@ -40,7 +40,8 @@ h6,
 .h6,
 p,
 li,
-.elementor-widget-button .elementor-button, .button-large {
+.elementor-widget-button .elementor-button,
+.button-large {
   font-family: 'CircularStd', sans-serif !important; }
 
 @media screen and (min-width: 768px) and (max-width: 819px) {
@@ -456,5 +457,15 @@ section.home-about-area .content ul + a {
 
 .copyright {
   font-size: 20px; }
+
+.footer-contents.footer-contents h2 {
+  font-size: 25px;
+  font-weight: 500; }
+.footer-contents.footer-contents a {
+  color: var(--white-color);
+  font-size: 20px; }
+.footer-contents.footer-contents .menu {
+  display: block !important;
+  padding-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
