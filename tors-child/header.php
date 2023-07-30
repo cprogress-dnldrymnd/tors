@@ -65,7 +65,7 @@
                     </div>
                     <!-- End: Top Logo -->
                     <!-- Start:Navigation Area -->
-                    <div class="col-md-7 menubar">
+                    <div class="col-md-7 ">
                         <!-- Start:Main Navigation -->
                         <div id="menu-toggle"><i class="fa fa-bars"></i></div>
                         <nav>
