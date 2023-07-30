@@ -398,6 +398,8 @@ section.home-about-area .content ul + a {
     border-color: #333333;
     background-color: #333333;
     color: #fff; }
+.button-box.button-white {
+  background-color: var(--white-color); }
 
 .home-blog-contents.home-blog-contents {
   background-color: transparent;

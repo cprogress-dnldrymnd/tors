@@ -536,6 +536,10 @@ section.home-about-area .content ul+a {
       }
     }
   }
+
+  &.button-white {
+    background-color: var(--white-color);
+  }
 }
 
 .home-blog-contents.home-blog-contents {
@@ -570,4 +574,10 @@ section.home-about-area .content ul+a {
 .footer-area.footer-area {
   background-color: var(--e-global-color-cea108a);
   background-image: none;
+}
+
+.button-box {
+  a {
+
+  }
 }
