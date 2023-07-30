@@ -417,4 +417,8 @@ section.home-about-area .content ul + a {
   .home-blog-items li .text-content span a:hover {
     color: var(--e-global-color-accent); }
 
+.button-large.button-large {
+  background-color: var(--e-global-color-accent);
+  border-color: varr(--e-global-color-accent); }
+
 /*# sourceMappingURL=style.css.map */
