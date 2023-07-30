@@ -460,7 +460,8 @@ section.home-about-area .content ul + a {
 
 .footer-contents.footer-contents h2 {
   font-size: 25px;
-  font-weight: 500; }
+  font-weight: 500;
+  line-height: 1; }
 .footer-contents.footer-contents .footer-middle-sec a {
   color: var(--white-color);
   font-size: 20px; }
