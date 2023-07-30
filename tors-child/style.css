@@ -419,6 +419,6 @@ section.home-about-area .content ul + a {
 
 .button-large.button-large {
   background-color: var(--e-global-color-accent);
-  border-color: varr(--e-global-color-accent); }
+  border-color: var(--e-global-color-accent); }
 
 /*# sourceMappingURL=style.css.map */
