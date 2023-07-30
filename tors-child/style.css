@@ -411,4 +411,10 @@ section.home-about-area .content ul + a {
   font-size: 36px !important;
   text-transform: initial; }
 
+.home-blog-items li .text-content span a {
+  color: var(--white-color);
+  font-size: 20px; }
+  .home-blog-items li .text-content span a:hover {
+    color: var(--e-global-color-accent); }
+
 /*# sourceMappingURL=style.css.map */
