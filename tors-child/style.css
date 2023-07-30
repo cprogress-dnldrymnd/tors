@@ -476,6 +476,9 @@ section.home-about-area .content ul + a {
   .footer-contents.footer-contents .menu li:not(:last-child) {
     margin-bottom: 10px; }
 
+.logo-anchor {
+  color: var(--white-color); }
+
 .social-box {
   margin-top: 10px; }
   .social-box a {

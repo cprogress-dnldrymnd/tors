@@ -18,7 +18,7 @@ function tors_logo()
 {
 	ob_start();
 	?>
-	<a href="<?php echo esc_url(home_url('/')); ?>">
+	<a class="logo-anchor" href="<?php echo esc_url(home_url('/')); ?>">
 		<div class="logo-box d-flex align-items-center">
 			<span class="logo-img">
 				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="57"
