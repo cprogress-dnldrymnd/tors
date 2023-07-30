@@ -29,7 +29,7 @@
         <div class="container large-container">
             <div class="top-bar">
                 <!-- Start: Top Logo -->
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-md-5 ">
                         <div class="logo">
                             <?= do_shortcode('[tors_logo]') ?>
