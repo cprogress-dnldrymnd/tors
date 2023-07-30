@@ -455,16 +455,19 @@ section.home-about-area .content ul + a {
   font-weight: bold;
   color: var(--white-color); }
 
-.copyright {
-  font-size: 20px; }
+.copyright.copyright {
+  font-size: 20px;
+  background-color: var(--e-global-color-cea108a); }
 
 .footer-contents.footer-contents h2 {
   font-size: 25px;
   font-weight: 500;
   line-height: 1; }
-.footer-contents.footer-contents .footer-middle-sec a {
-  color: var(--white-color);
-  font-size: 20px; }
+.footer-contents.footer-contents .footer-middle-sec {
+  padding-top: 10px; }
+  .footer-contents.footer-contents .footer-middle-sec a {
+    color: var(--white-color);
+    font-size: 20px; }
 .footer-contents.footer-contents .menu {
   display: block !important;
   padding-left: 0; }

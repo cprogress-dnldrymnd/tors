@@ -616,8 +616,9 @@ section.home-about-area .content ul+a {
   }
 }
 
-.copyright {
+.copyright.copyright {
   font-size: 20px;
+  background-color: var(--e-global-color-cea108a);
 }
 
 .footer-contents.footer-contents {
@@ -628,6 +629,7 @@ section.home-about-area .content ul+a {
   }
 
   .footer-middle-sec {
+        padding-top: 10px;
     a {
       color: var(--white-color);
       font-size: 20px;
