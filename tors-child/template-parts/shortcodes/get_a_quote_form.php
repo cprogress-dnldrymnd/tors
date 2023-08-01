@@ -73,5 +73,9 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
 
       }, 500);
     });
+
+    jQuery('.clear-selection').click(function (e) {
+      jQuery('textarea[name="instruments"]').val('');
+    });
   });
 </script>
