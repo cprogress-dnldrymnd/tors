@@ -593,7 +593,8 @@ section.home-about-area .content ul + a {
     .custom-lists .left-box .elementor-image-box .line-box .circle-2 {
       right: 0; }
 .custom-lists .right-box {
-  padding-left: 115px !important; }
+  padding-left: 115px !important;
+  padding-top: 105px; }
   .custom-lists .right-box .elementor-image-box .line-box {
     transform: translate(-100%, -50%);
     left: -15px; }
