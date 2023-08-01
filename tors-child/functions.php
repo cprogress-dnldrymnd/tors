@@ -22,6 +22,12 @@ function tissue_paper_register_custom_fields()
 	require_once('includes/post-meta.php');
 }
 
+
+/*-----------------------------------------------------------------------------------*/
+/* Require Files
+/*-----------------------------------------------------------------------------------*/
+require_once('includes/post_types.php');
+
 function tors_logo()
 {
 	ob_start();
