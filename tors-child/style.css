@@ -641,6 +641,8 @@ section.home-about-area .content ul + a {
     color: #333333;
     font-size: 30px;
     font-weight: bold; }
+  .get-a-quote-form .label-box .name-icon-box {
+    width: 100%; }
   .get-a-quote-form .label-box .image-box {
     width: 159px;
     padding: 50%;
