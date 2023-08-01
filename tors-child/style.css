@@ -667,7 +667,8 @@ section.home-about-area .content ul + a {
     height: 68px;
     border: 1px solid var(--e-global-color-accent);
     border-radius: 50%;
-    position: relative; }
+    position: relative;
+    transition: 300ms; }
     .get-a-quote-form .label-box .plus-minus-box:before, .get-a-quote-form .label-box .plus-minus-box:after {
       content: '';
       position: absolute;
@@ -681,7 +682,8 @@ section.home-about-area .content ul + a {
     .get-a-quote-form .label-box .plus-minus-box:after {
       height: 30px;
       width: 1px;
-      background-color: var(--black-color); }
+      background-color: var(--black-color);
+      transition: 300ms; }
 
 .justify-content-between {
   justify-content: space-between !important; }

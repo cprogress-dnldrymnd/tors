@@ -915,6 +915,7 @@ section.home-about-area .content ul+a {
       &+label {
         .plus-minus-box {
           background-color: var(--e-global-color-accent);
+
           &:after {
             opacity: 0;
           }
@@ -922,6 +923,7 @@ section.home-about-area .content ul+a {
       }
     }
   }
+
   .label-box {
     cursor: pointer;
     margin-bottom: 60px;
@@ -961,6 +963,7 @@ section.home-about-area .content ul+a {
       border: 1px solid var(--e-global-color-accent);
       border-radius: 50%;
       position: relative;
+      transition: 300ms;
 
       &:before,
       &:after {
@@ -982,6 +985,7 @@ section.home-about-area .content ul+a {
         height: 30px;
         width: 1px;
         background-color: var(--black-color);
+        transition: 300ms;
       }
     }
 
