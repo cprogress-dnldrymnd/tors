@@ -561,7 +561,7 @@ section.home-about-area .content ul + a {
   transform: translateX(-50%); }
 .custom-lists .row {
   margin: 0; }
-  .custom-lists .row .col-lg-6 {
+  .custom-lists .row .col-md-6 {
     padding: 0; }
 .custom-lists .custom-list-box {
   max-width: 450px;
