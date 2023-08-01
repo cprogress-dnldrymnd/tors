@@ -641,6 +641,19 @@ section.home-about-area .content ul + a {
     color: #333333;
     font-size: 30px;
     font-weight: bold; }
+  .get-a-quote-form .label-box .image-box {
+    width: 159px;
+    padding: 50%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden; }
+    .get-a-quote-form .label-box .image-box img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
   .get-a-quote-form .label-box .plus-minus-box {
     width: 68px;
     height: 68px;

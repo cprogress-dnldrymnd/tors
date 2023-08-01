@@ -919,6 +919,22 @@ section.home-about-area .content ul+a {
       font-weight: bold;
     }
 
+    .image-box {
+      width: 159px;
+      padding: 50%;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
     .plus-minus-box {
       width: 68px;
       height: 68px;
