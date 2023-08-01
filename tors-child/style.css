@@ -661,4 +661,7 @@ section.home-about-area .content ul + a {
       width: 1px;
       background-color: var(--black-color); }
 
+.justify-content-between {
+  justify-content: space-between !important; }
+
 /*# sourceMappingURL=style.css.map */
