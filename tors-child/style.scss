@@ -786,6 +786,7 @@ section.home-about-area .content ul+a {
 
   .elementor-image-box {
     position: relative;
+
     .line-box {
       height: 1px;
       background-color: #E2E2E2;
@@ -795,6 +796,17 @@ section.home-about-area .content ul+a {
       top: 50%;
       transform: translate(100%, -50%);
       z-index: 1;
+
+      .circle {
+        width: 10px;
+        height: 10px;
+        background-color: #E2E2E2;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 10px;
+      }
     }
   }
 

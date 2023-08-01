@@ -567,6 +567,15 @@ section.home-about-area .content ul + a {
     top: 50%;
     transform: translate(100%, -50%);
     z-index: 1; }
+    .custom-lists .elementor-image-box .line-box .circle {
+      width: 10px;
+      height: 10px;
+      background-color: #E2E2E2;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 10px; }
 .custom-lists .left-box {
   padding-right: 115px !important; }
   .custom-lists .left-box .custom-list-box {
