@@ -51,8 +51,20 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     jQuery(".label-box").click(function (event) {
 
       setTimeout(function () {
-        var val = jQuery(".instruments input:checkbox:checked").val();
+        var val = $(".instruments input:checkbox:checked").map(function () {
+          return jQuery(this).val();
+        }).get(); // <----
         console.log(val);
+
+        $append = '';
+
+        jQuery.each(val, function (index, value) {
+
+          $append = $append + $value;
+        });
+
+        console.log($append);
+
       }, 500);
     });
   });
