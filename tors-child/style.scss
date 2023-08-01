@@ -1010,7 +1010,7 @@ section.home-about-area .content ul+a {
       .form {
         margin-top: 40px;
       }
-      input, textarea{
+      input:not([type="submit"]), textarea{
         border: 1px solid #B1B1B1;
         border-radius: 50px;
         padding: 15px 30px;
