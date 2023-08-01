@@ -687,6 +687,10 @@ section.home-about-area .content ul + a {
       width: 1px;
       background-color: var(--black-color);
       transition: 300ms; }
+.get-a-quote-form .form-box {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
 
 .justify-content-between {
   justify-content: space-between !important; }
