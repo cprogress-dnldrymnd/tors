@@ -3,9 +3,9 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
 ?>
 
 <div class="get-a-quote-form">
-  <div class="row">
-    <?php foreach ($get_a_quote_form as $key => $form) { ?>
-      <div class="col-lg-4">
+  <div class="instruments">
+    <div class="row">
+      <?php foreach ($get_a_quote_form as $key => $form) { ?><div class="col-lg-4">
         <input type="checkbox" name="instruments[]" id="instrument-<?= $key ?>">
         <label for="instrument-<?= $key ?>" class="d-flex align-items-center justify-content-between label-box">
           <div class="image-holder">
@@ -23,6 +23,15 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
           </div>
         </label>
       </div>
-    <?Php } ?>
+      <?Php } ?>
+    </div>
+  </div>
+  <div class="form-box">
+    <div class="instrument-selection">
+      
+    </div>
+    <div class="form">
+      <?= do_shortcode( '[contact-form-7 id="734" title="Get A Quote"]' ) ?>
+    </div>
   </div>
 </div>
