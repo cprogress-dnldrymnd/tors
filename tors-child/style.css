@@ -592,6 +592,8 @@ section.home-about-area .content ul + a {
       left: 0; }
     .custom-lists .left-box .elementor-image-box .line-box .circle-2 {
       right: 0; }
+      .custom-lists .left-box .elementor-image-box .line-box .circle-2:before {
+        content: ''; }
 .custom-lists .right-box {
   padding-left: 115px !important;
   padding-top: 105px; }

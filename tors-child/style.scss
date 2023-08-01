@@ -835,6 +835,9 @@ section.home-about-area .content ul+a {
 
         .circle-2 {
           right: 0;
+          &:before {
+            content: '';
+          }
         }
       }
     }
