@@ -570,10 +570,17 @@ section.home-about-area .content ul + a {
       height: 10px;
       background-color: #E2E2E2;
       position: absolute;
-      left: 0;
       top: 50%;
       transform: translateY(-50%);
       border-radius: 10px; }
+    .custom-lists .elementor-image-box .line-box .circle-2 {
+      width: 26px;
+      height: 26px;
+      background-color: #E2E2E2;
+      border-radius: 26px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
 .custom-lists .left-box {
   padding-right: 115px !important; }
   .custom-lists .left-box .custom-list-box {
@@ -581,10 +588,18 @@ section.home-about-area .content ul + a {
   .custom-lists .left-box .elementor-image-box .line-box {
     transform: translate(100%, -50%);
     right: -15px; }
+    .custom-lists .left-box .elementor-image-box .line-box .circle {
+      left: 0; }
+    .custom-lists .left-box .elementor-image-box .line-box .circle-2 {
+      right: 0; }
 .custom-lists .right-box {
   padding-left: 115px !important; }
   .custom-lists .right-box .elementor-image-box .line-box {
     transform: translate(-100%, -50%);
     left: -15px; }
+    .custom-lists .right-box .elementor-image-box .line-box .circle {
+      right: 0; }
+    .custom-lists .right-box .elementor-image-box .line-box .circle-2 {
+      left: 0; }
 
 /*# sourceMappingURL=style.css.map */

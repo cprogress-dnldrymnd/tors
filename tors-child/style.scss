@@ -800,10 +800,19 @@ section.home-about-area .content ul+a {
         height: 10px;
         background-color: #E2E2E2;
         position: absolute;
-        left: 0;
         top: 50%;
         transform: translateY(-50%);
         border-radius: 10px;
+      }
+
+      .circle-2 {
+        width: 26px;
+        height: 26px;
+        background-color: #E2E2E2;
+        border-radius: 26px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
       }
     }
   }
@@ -819,6 +828,14 @@ section.home-about-area .content ul+a {
       .line-box {
         transform: translate(100%, -50%);
         right: -15px;
+
+        .circle {
+          left: 0;
+        }
+
+        .circle-2 {
+          right: 0;
+        }
       }
     }
   }
@@ -830,6 +847,14 @@ section.home-about-area .content ul+a {
       .line-box {
         transform: translate(-100%, -50%);
         left: -15px;
+
+        .circle {
+          right: 0;
+        }
+
+        .circle-2 {
+          left: 0;
+        }
       }
     }
   }
