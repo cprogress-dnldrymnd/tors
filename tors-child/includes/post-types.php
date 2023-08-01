@@ -154,7 +154,7 @@ new newPostType(
 	array(
 		'name'          => 'Clients',
 		'singular_name' => 'CLient',
-		'icon'          => 'dashicons-media-text',
+		'icon'          => 'dashicons-playlist-audio',
 		'rewrite'       => array('slug' => 'clients'),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
