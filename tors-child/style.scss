@@ -834,7 +834,7 @@ section.home-about-area .content ul+a {
         }
 
         .circle-2 {
-          right: 0;
+          right: -13px;
           &:before {
             content: '';
           }
@@ -856,7 +856,7 @@ section.home-about-area .content ul+a {
         }
 
         .circle-2 {
-          left: 0;
+          left: -13px;
         }
       }
     }

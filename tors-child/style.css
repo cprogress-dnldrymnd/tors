@@ -591,7 +591,7 @@ section.home-about-area .content ul + a {
     .custom-lists .left-box .elementor-image-box .line-box .circle {
       left: 0; }
     .custom-lists .left-box .elementor-image-box .line-box .circle-2 {
-      right: 0; }
+      right: -13px; }
       .custom-lists .left-box .elementor-image-box .line-box .circle-2:before {
         content: ''; }
 .custom-lists .right-box {
@@ -603,6 +603,6 @@ section.home-about-area .content ul + a {
     .custom-lists .right-box .elementor-image-box .line-box .circle {
       right: 0; }
     .custom-lists .right-box .elementor-image-box .line-box .circle-2 {
-      left: 0; }
+      left: -13px; }
 
 /*# sourceMappingURL=style.css.map */
