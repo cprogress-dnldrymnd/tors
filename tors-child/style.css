@@ -647,7 +647,8 @@ section.home-about-area .content ul + a {
     margin-right: 30px;
     color: #333333;
     font-size: 30px;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1.4; }
   .get-a-quote-form .label-box .name-icon-box {
     width: 100%; }
   .get-a-quote-form .label-box .image-box {
@@ -666,6 +667,7 @@ section.home-about-area .content ul + a {
   .get-a-quote-form .label-box .plus-minus-box {
     width: 68px;
     height: 68px;
+    flex: 0 0 68px;
     border: 1px solid var(--e-global-color-accent);
     border-radius: 50%;
     position: relative;

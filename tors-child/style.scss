@@ -934,6 +934,7 @@ section.home-about-area .content ul+a {
       color: #333333;
       font-size: 30px;
       font-weight: bold;
+      line-height: 1.4;
     }
 
     .name-icon-box {
@@ -960,6 +961,7 @@ section.home-about-area .content ul+a {
     .plus-minus-box {
       width: 68px;
       height: 68px;
+      flex: 0 0 68px;
       border: 1px solid var(--e-global-color-accent);
       border-radius: 50%;
       position: relative;
