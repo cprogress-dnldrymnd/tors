@@ -785,10 +785,10 @@ section.home-about-area .content ul+a {
   .row {
     margin: 0;
 
-    .col-md-6 {
+    .col-lg-6 {
       padding: 0;
       @media (min-width: 992px)  {
-        width: 50%;
+        width: 50% !important
       }
     }
   }
