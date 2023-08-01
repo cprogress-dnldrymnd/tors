@@ -634,4 +634,10 @@ section.home-about-area .content ul + a {
 .content-margin > *:not(:last-child) {
   margin-bottom: 1.5rem; }
 
+.get-a-quote-form .label-box .name-box {
+  margin-left: 30px;
+  color: #333333;
+  font-size: 30px;
+  font-weight: bold; }
+
 /*# sourceMappingURL=style.css.map */
