@@ -161,3 +161,16 @@ new newPostType(
 		'show_in_rest'  => true,
 	)
 );
+
+new newTaxonomy(
+	array(
+		'taxonomy'  => 'clients',
+		'post_type' => 'recordings',
+		'args'      => array(
+			'hierarchical' => true,
+			'label'        => 'Client',
+			'query_var'    => true,
+			'has_archive'  => false,
+		)
+	)
+);
