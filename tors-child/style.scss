@@ -795,6 +795,10 @@ section.home-about-area .content ul+a {
 
   .custom-list-box {
     max-width: 450px;
+    p {
+      font-size: 20px;
+      line-height: 1.2;
+    }
     &:not(.last-box) {
       margin-bottom: 130px;
     }
@@ -806,7 +810,7 @@ section.home-about-area .content ul+a {
   }
   .elementor-image-box {
     position: relative;
-
+    
     .line-box {
       height: 1px;
       background-color: #E2E2E2;
