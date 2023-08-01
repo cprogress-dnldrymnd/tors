@@ -771,7 +771,15 @@ section.home-about-area .content ul+a {
 }
 
 .custom-lists {
-
+  &:before {
+    position: absolute;
+    background-color: #E2E2E2;
+    width: 1px;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
   .row {
     margin: 0;
 
