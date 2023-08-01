@@ -6,7 +6,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
   <div class="instruments">
     <div class="row">
       <?php foreach ($get_a_quote_form as $key => $form) { ?><div class="col-lg-4">
-        <input type="checkbox" name="instruments[]" id="instrument-<?= $key ?>">
+        <input type="checkbox" name="instruments[]" value="<?= $form['name'] ?>" id="instrument-<?= $key ?>">
         <label for="instrument-<?= $key ?>" class="d-flex align-items-center justify-content-between label-box">
           <div class="image-holder">
             <div class="image-box">
