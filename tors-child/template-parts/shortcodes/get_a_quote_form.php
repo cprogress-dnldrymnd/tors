@@ -27,8 +27,8 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     </div>
   </div>
   <div class="form-box">
-    <div class="instrument-selection">
-      
+    <div class="instrument-selection text-center">
+      <h4>Your Selection</h4>
     </div>
     <div class="form">
       <?= do_shortcode( '[contact-form-7 id="734" title="Get A Quote"]' ) ?>
