@@ -515,7 +515,8 @@ section.home-about-area .content ul+a {
 .button-box {
 
   >a,
-  button, input[type="submit"] {
+  button,
+  input[type="submit"] {
     font-size: 20px;
     font-weight: 500;
     color: var(--e-global-color-text);
@@ -530,7 +531,8 @@ section.home-about-area .content ul+a {
   &.button-accent {
 
     >a,
-    button, input[type="submit"] {
+    button,
+    input[type="submit"] {
       border-color: var(--e-global-color-accent);
       background-color: var(--e-global-color-accent);
 
@@ -1029,8 +1031,11 @@ section.home-about-area .content ul+a {
         font-size: 19px;
         margin-bottom: 20px;
       }
+
       .row-buttons {
-        button, input {
+
+        button,
+        input {
           width: 100%;
         }
       }
@@ -1045,4 +1050,6 @@ section.home-about-area .content ul+a {
 .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
