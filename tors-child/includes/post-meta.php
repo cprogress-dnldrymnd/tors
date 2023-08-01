@@ -18,5 +18,7 @@ Container::make('theme_options', __('Get a Quote Form'))
           )
         )
         ->set_layout('tabbed-vertical')
+        ->set_header_template('<%- name  %>'),
+
     )
   );
