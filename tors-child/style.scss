@@ -772,6 +772,7 @@ section.home-about-area .content ul+a {
 
 .custom-lists {
   &:before {
+    content: '';
     position: absolute;
     background-color: #E2E2E2;
     width: 1px;
