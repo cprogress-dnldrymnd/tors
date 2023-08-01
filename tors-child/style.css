@@ -564,7 +564,8 @@ section.home-about-area .content ul + a {
   .custom-lists .row .col-lg-6 {
     padding: 0; }
 .custom-lists .custom-list-box {
-  max-width: 450px; }
+  max-width: 450px;
+  margin-bottom: 115px; }
 .custom-lists .elementor-image-box {
   position: relative; }
   .custom-lists .elementor-image-box .line-box {
