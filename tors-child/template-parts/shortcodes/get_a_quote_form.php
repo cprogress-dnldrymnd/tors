@@ -54,7 +54,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     jQuery(".label-box").click(function (event) {
 
       setTimeout(function () {
-        var val = $(".instruments input:checkbox:checked").map(function () {
+        var val = jQuery(".instruments input:checkbox:checked").map(function () {
           return jQuery(this).val();
         }).get(); // <----
 
@@ -75,6 +75,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     });
 
     jQuery('.clear-selection').click(function (e) {
+      jQuery(".instruments input[type='checkbox']").removeAttr('checked');
       jQuery('textarea[name="instruments"]').val('');
     });
   });
