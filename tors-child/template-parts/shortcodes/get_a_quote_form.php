@@ -75,6 +75,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     });
 
     jQuery('.clear-selection').click(function (e) {
+      jQuery('.selection').html('');
       jQuery(".instruments input[type='checkbox']").removeAttr('checked');
       jQuery('textarea[name="instruments"]').val('');
     });
