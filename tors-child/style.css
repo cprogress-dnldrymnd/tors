@@ -717,6 +717,11 @@ section.home-about-area .content ul + a {
   .get-a-quote-form .form-box .inner .row-buttons button,
   .get-a-quote-form .form-box .inner .row-buttons input {
     width: 100%; }
+.get-a-quote-form .form-box .wpcf7-list-item {
+  margin-left: 0; }
+.get-a-quote-form .form-box .wpcf7-acceptance label {
+  font-size: 14px;
+  font-weight: 400; }
 
 .justify-content-between {
   justify-content: space-between !important; }

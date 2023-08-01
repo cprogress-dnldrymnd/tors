@@ -1040,6 +1040,17 @@ section.home-about-area .content ul+a {
         }
       }
     }
+
+    .wpcf7-list-item {
+      margin-left: 0;
+    }
+
+    .wpcf7-acceptance {
+      label {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
   }
 }
 
