@@ -1010,12 +1010,13 @@ section.home-about-area .content ul+a {
       .form {
         margin-top: 40px;
       }
-      input {
+      input, textarea{
         border: 1px solid #B1B1B1;
         border-radius: 50px;
         padding: 15px 30px;
         line-height: 1;
         font-size: 19px;
+        margin-bottom: 20px;
       }
     }
   }
