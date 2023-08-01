@@ -700,6 +700,8 @@ section.home-about-area .content ul + a {
   margin-right: auto; }
   .get-a-quote-form .form-box .inner .form {
     margin-top: 40px; }
+    .get-a-quote-form .form-box .inner .form label, .get-a-quote-form .form-box .inner .form .wpcf7-form-control-wrap {
+      width: 100%; }
   .get-a-quote-form .form-box .inner input[type="checkbox"] {
     appearance: auto;
     box-sizing: border-box;

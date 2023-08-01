@@ -1012,6 +1012,9 @@ section.home-about-area .content ul+a {
 
       .form {
         margin-top: 40px;
+        label, .wpcf7-form-control-wrap {
+          width: 100%;
+        }
       }
 
       input[type="checkbox"] {
