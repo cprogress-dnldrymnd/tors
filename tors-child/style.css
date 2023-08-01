@@ -639,5 +639,24 @@ section.home-about-area .content ul + a {
   color: #333333;
   font-size: 30px;
   font-weight: bold; }
+.get-a-quote-form .label-box .plus-minus-box {
+  width: 68px;
+  height: 68px;
+  border: 1px solid var(--e-global-color-accent);
+  border-radius: 50%; }
+  .get-a-quote-form .label-box .plus-minus-box:before, .get-a-quote-form .label-box .plus-minus-box:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%); }
+.get-a-quote-form .label-box:before {
+  width: 30px;
+  height: 1px;
+  background-color: var(--black-color); }
+  .get-a-quote-form .label-box:before:after {
+    height: 30px;
+    width: 1px;
+    background-color: var(--black-color); }
 
 /*# sourceMappingURL=style.css.map */
