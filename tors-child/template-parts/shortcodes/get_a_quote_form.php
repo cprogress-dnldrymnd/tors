@@ -49,10 +49,11 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
 <script>
   jQuery(document).ready(function () {
     jQuery(".label-box").click(function (event) {
-      var searchIDs = $(".instruments input:checkbox:checked").map(function () {
-        return jQuery(this).val();
-      }).get(); // <----
-      console.log(searchIDs);
+
+      setTimeout(function () {
+        var val = jQuery(".instruments input:checkbox:checked").val();
+        console.log(val);
+      }, 500);
     });
   });
 </script>
