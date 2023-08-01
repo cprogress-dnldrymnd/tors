@@ -695,6 +695,14 @@ section.home-about-area .content ul + a {
   max-width: 500px;
   margin-left: auto;
   margin-right: auto; }
+  .get-a-quote-form .form-box .inner .form {
+    margin-top: 40px; }
+  .get-a-quote-form .form-box .inner input {
+    border: 1px solid #B1B1B1;
+    border-radius: 50px;
+    padding: 15px 30px;
+    line-height: 1;
+    font-size: 19px; }
 
 .justify-content-between {
   justify-content: space-between !important; }

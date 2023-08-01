@@ -1007,7 +1007,16 @@ section.home-about-area .content ul+a {
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
-
+      .form {
+        margin-top: 40px;
+      }
+      input {
+        border: 1px solid #B1B1B1;
+        border-radius: 50px;
+        padding: 15px 30px;
+        line-height: 1;
+        font-size: 19px;
+      }
     }
   }
 }
