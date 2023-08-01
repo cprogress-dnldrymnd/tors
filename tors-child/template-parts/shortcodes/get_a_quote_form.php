@@ -27,11 +27,19 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     </div>
   </div>
   <div class="form-box">
-    <div class="instrument-selection text-center">
-      <h4>Your Selection</h4>
+    <div class="svg-box">
+      <svg xmlns="http://www.w3.org/2000/svg" width="46" height="19" viewBox="0 0 46 19">
+        <path id="Polygon_2" data-name="Polygon 2" d="M23,0,46,19H0Z" transform="translate(46 19) rotate(180)"
+          fill="#e2e2e2" />
+      </svg>
     </div>
-    <div class="form">
-      <?= do_shortcode( '[contact-form-7 id="734" title="Get A Quote"]' ) ?>
+    <div class="inner">
+      <div class="instrument-selection text-center">
+        <h4>Your Selection</h4>
+      </div>
+      <div class="form">
+        <?= do_shortcode('[contact-form-7 id="734" title="Get A Quote"]') ?>
+      </div>
     </div>
   </div>
 </div>
