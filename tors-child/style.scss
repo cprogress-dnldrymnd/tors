@@ -1029,10 +1029,20 @@ section.home-about-area .content ul+a {
         font-size: 19px;
         margin-bottom: 20px;
       }
+      .row-buttons {
+        button, input {
+          width: 100%;
+        }
+      }
     }
   }
 }
 
 .justify-content-between {
   justify-content: space-between !important;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
 }

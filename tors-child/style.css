@@ -711,8 +711,14 @@ section.home-about-area .content ul + a {
     line-height: 1;
     font-size: 19px;
     margin-bottom: 20px; }
+  .get-a-quote-form .form-box .inner .row-buttons button, .get-a-quote-form .form-box .inner .row-buttons input {
+    width: 100%; }
 
 .justify-content-between {
   justify-content: space-between !important; }
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%; }
 
 /*# sourceMappingURL=style.css.map */
