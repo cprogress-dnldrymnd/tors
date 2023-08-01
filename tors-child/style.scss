@@ -1007,10 +1007,21 @@ section.home-about-area .content ul+a {
       max-width: 500px;
       margin-left: auto;
       margin-right: auto;
+
       .form {
         margin-top: 40px;
       }
-      input:not([type="submit"]):not([type="checkbox"]), textarea{
+
+      input[type="checkbox"] {
+        appearance: auto;
+        box-sizing: border-box;
+        margin: 3px 3px 3px 4px;
+        padding: initial;
+        border: initial;
+      }
+
+      input:not([type="submit"]):not([type="checkbox"]),
+      textarea {
         border: 1px solid #B1B1B1;
         border-radius: 50px;
         padding: 15px 30px;
