@@ -384,7 +384,7 @@ section.home-about-area .content ul + a {
   margin-top: 30px; }
 
 .button-box > a,
-.button-box button {
+.button-box button, .button-box input[type="submit"] {
   font-size: 20px;
   font-weight: 500;
   color: var(--e-global-color-text);
@@ -395,11 +395,11 @@ section.home-about-area .content ul + a {
   display: inline-block;
   line-height: 1; }
 .button-box.button-accent > a,
-.button-box.button-accent button {
+.button-box.button-accent button, .button-box.button-accent input[type="submit"] {
   border-color: var(--e-global-color-accent);
   background-color: var(--e-global-color-accent); }
   .button-box.button-accent > a:hover,
-  .button-box.button-accent button:hover {
+  .button-box.button-accent button:hover, .button-box.button-accent input[type="submit"]:hover {
     border-color: #333333;
     background-color: #333333;
     color: #fff; }
