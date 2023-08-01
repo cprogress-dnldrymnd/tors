@@ -65,7 +65,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
         });
 
         console.log($append);
-
+        jQuery('.selection').html('');
         jQuery(jQuery($append)).appendTo('.selection');
 
       }, 500);
