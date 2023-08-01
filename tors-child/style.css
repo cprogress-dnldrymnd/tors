@@ -596,7 +596,7 @@ section.home-about-area .content ul + a {
         content: ''; }
 .custom-lists .right-box {
   padding-left: 115px !important;
-  padding-top: 105px; }
+  padding-top: 115px !important; }
   .custom-lists .right-box .elementor-image-box .line-box {
     transform: translate(-100%, -50%);
     left: -15px; }
