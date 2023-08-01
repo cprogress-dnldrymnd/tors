@@ -170,7 +170,7 @@ new newTaxonomy(
 			'hierarchical' => true,
 			'label'        => 'Client',
 			'query_var'    => true,
-			'has_archive'  => false,
+			'has_archive'  => true,
 		)
 	)
 );
