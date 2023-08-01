@@ -690,7 +690,10 @@ section.home-about-area .content ul + a {
 .get-a-quote-form .form-box {
   max-width: 500px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 75px;
+  padding-top: 75px;
+  border-top: 2px solid #E2E2E2; }
 
 .justify-content-between {
   justify-content: space-between !important; }
