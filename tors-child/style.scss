@@ -1012,7 +1012,9 @@ section.home-about-area .content ul+a {
 
       .form {
         margin-top: 40px;
-        label, .wpcf7-form-control-wrap {
+
+        label,
+        .wpcf7-form-control-wrap {
           width: 100%;
         }
       }
@@ -1052,6 +1054,20 @@ section.home-about-area .content ul+a {
       label {
         font-size: 14px;
         font-weight: 400;
+      }
+    }
+  }
+
+  .selection {
+    margin-top: 40px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:after {
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g id="Group_568" data-name="Group 568" transform="translate(-507 -3702.75)"><g id="Ellipse_31" data-name="Ellipse 31" transform="translate(507 3702.75)" fill="%23fdcd55" stroke="%23fdcd55" stroke-width="3"><circle cx="10.5" cy="10.5" r="10.5" stroke="none"/><circle cx="10.5" cy="10.5" r="9" fill="none"/></g><path id="Path_263" data-name="Path 263" d="M513.659,3713.843l3.586,3.586,6.436-6.436" transform="translate(-1.171 -0.961)" fill="none" stroke="%23000" stroke-width="2"/></g></svg>');
       }
     }
   }
