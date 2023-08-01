@@ -563,9 +563,7 @@ section.home-about-area .content ul + a {
     background-color: #E2E2E2;
     width: 100px;
     position: absolute;
-    right: -15px;
     top: 50%;
-    transform: translate(100%, -50%);
     z-index: 1; }
     .custom-lists .elementor-image-box .line-box .circle {
       width: 10px;
@@ -580,7 +578,13 @@ section.home-about-area .content ul + a {
   padding-right: 115px !important; }
   .custom-lists .left-box .custom-list-box {
     margin-left: auto; }
+  .custom-lists .left-box .elementor-image-box .line-box {
+    transform: translate(100%, -50%);
+    right: -15px; }
 .custom-lists .right-box {
   padding-left: 115px !important; }
+  .custom-lists .right-box .elementor-image-box .line-box {
+    transform: translate(-100%, -50%);
+    left: -15px; }
 
 /*# sourceMappingURL=style.css.map */

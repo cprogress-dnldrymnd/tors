@@ -792,9 +792,7 @@ section.home-about-area .content ul+a {
       background-color: #E2E2E2;
       width: 100px;
       position: absolute;
-      right: -15px;
       top: 50%;
-      transform: translate(100%, -50%);
       z-index: 1;
 
       .circle {
@@ -816,10 +814,23 @@ section.home-about-area .content ul+a {
     .custom-list-box {
       margin-left: auto;
     }
+
+    .elementor-image-box {
+      .line-box {
+        transform: translate(100%, -50%);
+        right: -15px;
+      }
+    }
   }
 
   .right-box {
     padding-left: 115px !important;
-    ;
+
+    .elementor-image-box {
+      .line-box {
+        transform: translate(-100%, -50%);
+        left: -15px;
+      }
+    }
   }
 }
