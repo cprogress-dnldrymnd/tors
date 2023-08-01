@@ -38,6 +38,9 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     <div class="inner">
       <div class="instrument-selection text-center">
         <h4>Your Selection</h4>
+        <ul class="selection">
+
+        </ul>
       </div>
       <div class="form">
         <?= do_shortcode('[contact-form-7 id="734" title="Get A Quote"]') ?>
@@ -58,11 +61,12 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
         $append = '';
 
         jQuery.each(val, function (index, value) {
-
-          $append = $append + value;
+          $append = $append + '<li>' + value + '<li>';
         });
 
         console.log($append);
+
+        jQuery(jQuery($append)).appendTo('.selection');
 
       }, 500);
     });
