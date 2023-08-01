@@ -636,6 +636,8 @@ section.home-about-area .content ul + a {
 
 .get-a-quote-form input[type="checkbox"]:checked + label .plus-minus-box {
   background-color: var(--e-global-color-accent); }
+  .get-a-quote-form input[type="checkbox"]:checked + label .plus-minus-box:after {
+    opacity: 0; }
 .get-a-quote-form .label-box {
   cursor: pointer;
   margin-bottom: 60px; }
