@@ -567,8 +567,9 @@ section.home-about-area .content ul + a {
       .custom-lists .row .col-lg-6 {
         width: 50% !important; } }
 .custom-lists .custom-list-box {
-  max-width: 450px;
-  margin-bottom: 115px; }
+  max-width: 450px; }
+  .custom-lists .custom-list-box:not(.last-box) {
+    margin-bottom: 130px; }
 @media (min-width: 992px) {
   .custom-lists .elementor-image-box-title {
     font-size: 36px; } }

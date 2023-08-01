@@ -795,7 +795,9 @@ section.home-about-area .content ul+a {
 
   .custom-list-box {
     max-width: 450px;
-    margin-bottom: 115px;
+    &:not(.last-box) {
+      margin-bottom: 130px;
+    }
   }
   .elementor-image-box-title {
     @media(min-width: 992px) {
