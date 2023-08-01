@@ -556,8 +556,8 @@ section.home-about-area .content ul + a {
   background-color: #E2E2E2;
   width: 1px;
   left: 50%;
-  top: 0;
-  bottom: 0;
+  top: 35px;
+  bottom: 400px;
   transform: translateX(-50%); }
 .custom-lists .row {
   margin: 0; }
