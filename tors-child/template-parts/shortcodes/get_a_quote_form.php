@@ -54,7 +54,6 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
         var val = $(".instruments input:checkbox:checked").map(function () {
           return jQuery(this).val();
         }).get(); // <----
-        console.log(val);
 
         $append = '';
 
