@@ -557,8 +557,9 @@ section.home-about-area .content ul + a {
 .custom-lists .custom-list-box {
   max-width: 450px; }
 .custom-lists .left-box {
-  margin-left: auto;
   padding-right: 105px; }
+  .custom-lists .left-box .custom-list-box {
+    margin-left: auto; }
 .custom-lists .right-box {
   padding-left: 105px; }
 

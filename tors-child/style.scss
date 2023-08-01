@@ -785,8 +785,11 @@ section.home-about-area .content ul+a {
   }
 
   .left-box {
-    margin-left: auto;
     padding-right: 105px;
+
+    .custom-list-box {
+      margin-left: auto;
+    }
   }
 
   .right-box {
