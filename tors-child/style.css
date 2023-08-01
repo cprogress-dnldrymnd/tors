@@ -550,4 +550,7 @@ section.home-about-area .content ul + a {
   .row:before, .row:after {
     content: none; }
 
+.custom-lists .custom-list-box {
+  max-width: 450px; }
+
 /*# sourceMappingURL=style.css.map */
