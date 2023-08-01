@@ -566,6 +566,9 @@ section.home-about-area .content ul + a {
 .custom-lists .custom-list-box {
   max-width: 450px;
   margin-bottom: 115px; }
+@media (min-width: 992px) {
+  .custom-lists .elementor-image-box-title {
+    font-size: 36px; } }
 .custom-lists .elementor-image-box {
   position: relative; }
   .custom-lists .elementor-image-box .line-box {
