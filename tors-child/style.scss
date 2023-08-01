@@ -997,9 +997,11 @@ section.home-about-area .content ul+a {
 
 
   .form-box {
-    margin-top: 75px;
-    padding-top: 75px;
-    border-top: 2px solid #E2E2E2;
+    .form-box-header {
+      margin-top: 75px;
+      padding-top: 75px;
+      border-top: 2px solid #E2E2E2;
+    }
 
     .inner {
       max-width: 500px;
