@@ -794,7 +794,11 @@ section.home-about-area .content ul+a {
     max-width: 450px;
     margin-bottom: 115px;
   }
-
+  .elementor-image-box-title {
+    @media(min-width: 992px) {
+      font-size: 36px;
+    }
+  }
   .elementor-image-box {
     position: relative;
 
