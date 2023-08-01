@@ -63,7 +63,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
 
         jQuery.each(val, function (index, value) {
           $append = $append + '<li>' + value + '</li>';
-          $textarea_val = $append + value + '\n';
+          $textarea_val = $textarea_val + value + '\n';
         });
 
         console.log($append);
