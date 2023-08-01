@@ -556,11 +556,22 @@ section.home-about-area .content ul + a {
     padding: 0; }
 .custom-lists .custom-list-box {
   max-width: 450px; }
+.custom-lists .elementor-image-box {
+  position: relative; }
+  .custom-lists .elementor-image-box .line-box {
+    height: 1px;
+    background-color: #E2E2E2;
+    width: 100px;
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translate(100%, -50%);
+    z-index: 1; }
 .custom-lists .left-box {
-  padding-right: 105px !important; }
+  padding-right: 115px !important; }
   .custom-lists .left-box .custom-list-box {
     margin-left: auto; }
 .custom-lists .right-box {
-  padding-left: 105px !important; }
+  padding-left: 115px !important; }
 
 /*# sourceMappingURL=style.css.map */

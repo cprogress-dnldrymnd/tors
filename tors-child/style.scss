@@ -784,8 +784,22 @@ section.home-about-area .content ul+a {
     max-width: 450px;
   }
 
+  .elementor-image-box {
+    position: relative;
+    .line-box {
+      height: 1px;
+      background-color: #E2E2E2;
+      width: 100px;
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translate(100%, -50%);
+      z-index: 1;
+    }
+  }
+
   .left-box {
-    padding-right: 105px !important;
+    padding-right: 115px !important;
 
     .custom-list-box {
       margin-left: auto;
@@ -793,6 +807,7 @@ section.home-about-area .content ul+a {
   }
 
   .right-box {
-    padding-left: 105px !important;;
+    padding-left: 115px !important;
+    ;
   }
 }
