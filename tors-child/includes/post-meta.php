@@ -17,5 +17,6 @@ Container::make('theme_options', __('Get a Quote Form'))
             Field::make('image', 'image', __('Image')),
           )
         )
+        ->set_layout('tabbed-vertical')
     )
   );
