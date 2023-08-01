@@ -45,3 +45,15 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
     </div>
   </div>
 </div>
+
+<script>
+  jQuery(document).ready(function () {
+    jQuery(".label-box").click(function (event) {
+      event.preventDefault();
+      var searchIDs = $(".instruments input:checkbox:checked").map(function () {
+        return jQuery(this).val();
+      }).get(); // <----
+      console.log(searchIDs);
+    });
+  });
+</script>
