@@ -13,7 +13,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
               <img src="<?= wp_get_attachment_image_url($form['image'], 'medium') ?>" alt="<?= $form['name'] ?>">
             </div>
           </div>
-          <div class="name-icon-box d-flex align-items-center">
+          <div class="name-icon-box d-flex align-items-center justify-content-between">
             <div class="name-box">
               <?= $form['name'] ?>
             </div>
