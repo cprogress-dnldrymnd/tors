@@ -152,10 +152,10 @@ class newTaxonomy
 
 new newPostType(
 	array(
-		'name'          => 'Clients',
-		'singular_name' => 'CLient',
+		'name'          => 'Recordings',
+		'singular_name' => 'recording',
 		'icon'          => 'dashicons-playlist-audio',
-		'rewrite'       => array('slug' => 'clients'),
+		'rewrite'       => array('slug' => 'recordings'),
 		'has_archive'   => true,
 		'supports'      => array('title', 'revisions', 'editor', 'thumbnail', 'excerpt'),
 		'show_in_rest'  => true,
