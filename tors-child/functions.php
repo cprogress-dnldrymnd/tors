@@ -13,6 +13,14 @@ function moroko_child_theme_setup()
 }
 add_action('after_setup_theme', 'moroko_child_theme_setup');
 
+/*-----------------------------------------------------------------------------------*/
+/* Register Carbofields
+/*-----------------------------------------------------------------------------------*/
+add_action('carbon_fields_register_fields', 'tissue_paper_register_custom_fields');
+function tissue_paper_register_custom_fields()
+{
+	require_once('includes/post-meta.php');
+}
 
 function tors_logo()
 {
