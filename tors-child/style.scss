@@ -711,7 +711,8 @@ section.home-about-area .content ul+a {
 
   nav {
     position: static;
-    > .menu {
+
+    >.menu {
       display: block !important;
       background-color: transparent;
       opacity: 1;
@@ -719,7 +720,8 @@ section.home-about-area .content ul+a {
       transform: none;
       margin-bottom: 0;
       float: none;
-      > li {
+
+      >li {
         opacity: 1;
         visibility: visible;
         transform: none;
@@ -761,13 +763,28 @@ section.home-about-area .content ul+a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  &:before, &:after {
+
+  &:before,
+  &:after {
     content: none;
   }
 }
 
 .custom-lists {
+
+  .row {
+    margin: 0;
+
+    .col-lg-6 {
+      padding: 0;
+    }
+  }
+
   .custom-list-box {
     max-width: 450px;
+  }
+
+  .left-box {
+    margin-left: auto;
   }
 }
