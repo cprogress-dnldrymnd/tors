@@ -785,7 +785,7 @@ section.home-about-area .content ul+a {
   }
 
   .left-box {
-    padding-right: 105px;
+    padding-right: 105px !important;
 
     .custom-list-box {
       margin-left: auto;
@@ -793,6 +793,6 @@ section.home-about-area .content ul+a {
   }
 
   .right-box {
-    padding-left: 105px;
+    padding-left: 105px !important;;
   }
 }
