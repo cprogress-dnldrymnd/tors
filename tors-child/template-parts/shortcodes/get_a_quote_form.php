@@ -71,7 +71,7 @@ $get_a_quote_form = carbon_get_theme_option('get_a_quote_form');
         jQuery(jQuery($append)).appendTo('.selection');
         jQuery('textarea[name="instruments"]').val($textarea_val);
 
-      }, 300);
+      }, 100);
     });
 
     jQuery('.clear-selection').click(function (e) {
