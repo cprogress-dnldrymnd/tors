@@ -881,3 +881,11 @@ section.home-about-area .content ul+a {
     }
   }
 }
+
+.content-margin {
+  > * {
+    &:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
