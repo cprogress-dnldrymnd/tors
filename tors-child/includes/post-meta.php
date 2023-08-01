@@ -10,15 +10,11 @@ use Carbon_Fields\Field;
 Container::make('theme_options', __('Get a Quote Form'))
   ->add_fields(
     array(
-      Field::make('complex', 'featured_boxes', 'Featured Boxes')
+      Field::make('complex', 'get_a_quote_form', __())
         ->add_fields(
           array(
-            Field::make('text', 'prefix', 'Prefix'),
-            Field::make('text', 'heading', 'Heading'),
-            Field::make('textarea', 'description', 'Description'),
-            Field::make('text', 'link', 'Link'),
-            Field::make('image', 'image', 'Image'),
-
+            Field::make('text', 'name', __('Name')),
+            Field::make('image', 'image', __('Image')),
           )
         )
     )
