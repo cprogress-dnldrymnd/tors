@@ -651,8 +651,8 @@ section.home-about-area .content ul + a {
       position: absolute;
       left: 0;
       top: 0;
-      height: 100%;
-      width: 100%;
+      height: 105%;
+      width: 105%;
       object-fit: cover; }
   .get-a-quote-form .label-box .plus-minus-box {
     width: 68px;
