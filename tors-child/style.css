@@ -563,6 +563,9 @@ section.home-about-area .content ul + a {
   margin: 0; }
   .custom-lists .row .col-md-6 {
     padding: 0; }
+    @media (min-width: 992px) {
+      .custom-lists .row .col-md-6 {
+        width: 50%; } }
 .custom-lists .custom-list-box {
   max-width: 450px;
   margin-bottom: 115px; }
