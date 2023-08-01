@@ -668,7 +668,7 @@ section.home-about-area .content ul + a {
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%); }
+      transform: translate(-50%, -50%); }
     .get-a-quote-form .label-box .plus-minus-box:before {
       width: 30px;
       height: 1px;
