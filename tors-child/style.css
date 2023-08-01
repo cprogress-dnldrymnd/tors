@@ -729,7 +729,9 @@ section.home-about-area .content ul + a {
   font-weight: 400; }
 .get-a-quote-form .selection {
   margin-top: 40px;
-  padding-left: 0; }
+  padding-left: 0;
+  font-size: 19px;
+  color: #666666; }
   .get-a-quote-form .selection li {
     display: flex;
     align-items: center;
