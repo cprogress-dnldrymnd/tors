@@ -66,3 +66,5 @@ function get_a_quote_form()
 }
 
 add_shortcode('get_a_quote_form', 'get_a_quote_form');
+
+add_filter('wpcf7_autop_or_not', '__return_false');
