@@ -34,7 +34,7 @@ $query = new WP_Query($args);
             </div>
             <div class="audio-box">
               <div id="before-audio">
-
+                
               </div>
             </div>
           </div>
@@ -60,7 +60,7 @@ else { ?>
 
 
   const wavesurfer = WaveSurfer.create({
-    container: jQuery('#before-audio'),
+    container: document.getElementById("before-audio"),
     waveColor: 'rgb(0, 0, 0)',
     progressColor: 'rgb(100, 0, 100)',
     barWidth: 10,
