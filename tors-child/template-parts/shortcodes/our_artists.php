@@ -68,9 +68,9 @@ else { ?>
     $after_audio = carbon_get_the_post_meta('after_audio');
 
     if ($before_audio) {
-      $id = 'before-audio-' . get_the_ID();
-      $before_audio_url = wp_get_attachment_url($before_audio);
       ?>
+      $id = 'before-audio-<?= get_the_ID() ?>';
+      $before_audio_url = '<?= wp_get_attachment_url($before_audio); ?>';
       wavesurfer($id, $before_audio_url);
       <?php
     }
