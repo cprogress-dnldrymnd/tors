@@ -114,6 +114,7 @@ else { ?>
       height: 40,
       cursorColor: '#fff',
       cursorWidth: 1,
+      normalize: true,
     })
 
     wavesurfer.on('interaction', () => {
