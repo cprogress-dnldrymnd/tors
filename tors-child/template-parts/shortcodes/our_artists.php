@@ -61,7 +61,7 @@ else { ?>
     barWidth: 10,
     barRadius: 10,
     barGap: 2,
-    url: '/examples/audio/demo.wav',
+    url: 'https://tors.theprogressteam.com/wp-content/uploads/2023/08/before.mp3',
     peaks: [
       [
         0, 0.0023595101665705442, 0.012107174843549728, 0.005919494666159153, -0.31324470043182373, 0.1511787623167038,
