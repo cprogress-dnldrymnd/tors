@@ -56,7 +56,7 @@ else { ?>
 
   const wavesurfer = WaveSurfer.create({
     container: document.body,
-    waveColor: 'rgb(200, 0, 200)',
+    waveColor: 'rgb(0, 0, 0)',
     progressColor: 'rgb(100, 0, 100)',
     barWidth: 10,
     barRadius: 10,
