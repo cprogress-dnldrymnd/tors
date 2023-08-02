@@ -764,7 +764,18 @@ section.home-about-area .content ul + a {
 .our-recordings .recording-box {
   padding: 50%;
   position: relative;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+  .our-recordings .recording-box:before {
+    content: '';
+    background-color: #1B1B1E8B;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
   .our-recordings .recording-box .inner {
     position: absolute;
     left: 0;
