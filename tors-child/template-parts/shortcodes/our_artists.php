@@ -111,7 +111,7 @@ else { ?>
       barRadius: 2,
       barGap: 1,
       url: $url,
-   
+      height: 24, 
     })
 
     wavesurfer.on('interaction', () => {
