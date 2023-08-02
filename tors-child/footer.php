@@ -60,7 +60,7 @@
                     <?php if (is_active_sidebar('footer-area-5')): ?>
                         <!-- Start:Social Icon Area -->
                         <div class="class=" <?= $i > 3 ? 'col-md-3' : 'col-md-4' ?> ">
-                                                            <div class=" social-icon">
+                                                                <div class=" social-icon">
                             <?php dynamic_sidebar('footer-area-5'); ?>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
     <div class="copyright">
         <div class="container">
             <p><?php if (isset($moroko_redux_demo['footer_text'])) { ?>
-                <?php echo htmlspecialchars_decode(esc_attr($moroko_redux_demo['footer_text'])); ?>
+                    <?php echo htmlspecialchars_decode(esc_attr($moroko_redux_demo['footer_text'])); ?>
                 <?php }
             else { ?>
                     <?php echo esc_html__('2022 © Moroko. All rights reserved.', 'moroko');
@@ -94,12 +94,15 @@
 
 <!-- Initialize Swiper -->
 <script>
-  var swiper = new Swiper(".mySwiperRecordings", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+    var swiper = new Swiper(".mySwiperRecordings", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
 </script>
