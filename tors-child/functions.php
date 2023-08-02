@@ -6,7 +6,7 @@
  * Translations can be filed in the /languages/ directory.
  */
 
-define('theme_dir', get_template_directory_uri() . '/');
+define('theme_dir', get_stylesheet_directory_uri() . '/');
 define('assets_dir', theme_dir . 'assets/');
 define('image_dir', assets_dir . 'images/');
 define('vendor_dir', assets_dir . 'vendors/');
