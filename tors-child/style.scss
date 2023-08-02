@@ -1112,10 +1112,12 @@ section.home-about-area .content ul+a {
   overflow: hidden;
 
   .swiper-button-prev.swiper-button-prev {
+    margin-top: -100px;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z" fill="%23000"/></svg>');
   }
 
   .swiper-button-next.swiper-button-next {
+    margin-top: -100px;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z" fill="%23007aff"/></svg>');
   }
 
@@ -1126,6 +1128,16 @@ section.home-about-area .content ul+a {
 }
 
 .our-recordings {
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    bottom: 0;
+    background-color: #2B3841;
+    right: 0;
+  }
+
   .recording-box {
     padding: 50%;
     position: relative;
