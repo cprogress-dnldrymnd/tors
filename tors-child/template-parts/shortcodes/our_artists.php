@@ -112,7 +112,7 @@ else { ?>
       "progressColor": "#ffffff",
       "cursorColor": "#ddd5e9",
       "cursorWidth": 4,
-      "barWidth": 3,
+      "barWidth": 4,
       "barGap": 3,
       "barRadius": 30,
       "barHeight": null,
