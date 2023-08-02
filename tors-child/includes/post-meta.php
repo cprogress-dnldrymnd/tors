@@ -30,7 +30,9 @@ Container::make('post_meta', 'Custom Data')
   ->where('post_type', '=', 'page')
   ->add_fields(
     array(
-      Field::make('file', 'before_audio', __('Before Audio')),
+      Field::make('file', 'before_audio', __('Before Audio'))
+        ->set_type(array('audio')),
       Field::make('file', 'after_audio', __('After Audio'))
+        ->set_type(array('audio')),
     )
   );
