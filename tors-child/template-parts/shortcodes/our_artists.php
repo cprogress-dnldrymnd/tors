@@ -105,7 +105,7 @@ else { ?>
     // With pre-decoded audio data
     const wavesurfer = WaveSurfer.create({
       "container": document.getElementById($id),
-      "height": 56,
+      "height": 40,
       "splitChannels": false,
       "normalize": false,
       "waveColor": "#6e6e6d",
