@@ -761,6 +761,9 @@ section.home-about-area .content ul + a {
 .clear-selection {
   cursor: pointer; }
 
+.mySwiperRecordings {
+  overflow: hidden; }
+
 .our-recordings .recording-box {
   padding: 50%;
   position: relative;
