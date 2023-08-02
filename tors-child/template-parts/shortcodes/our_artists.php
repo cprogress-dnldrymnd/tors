@@ -30,7 +30,7 @@ $query = new WP_Query($args);
               </div>
             </div>
             <div class="text-box">
-              <?php the_content() ?>
+              <?= wpautop(get_the_content()) ?>
             </div>
           </div>
         <?php } ?>
