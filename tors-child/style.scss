@@ -590,6 +590,7 @@ section.home-about-area .content ul+a {
   background-color: var(--e-global-color-accent);
   color: var(--e-global-color-text);
   border-color: var(--e-global-color-accent);
+  text-transform: initial !important;
 }
 
 .footer-area.footer-area {
