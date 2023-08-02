@@ -767,7 +767,8 @@ section.home-about-area .content ul + a {
   margin-bottom: 24px;
   background-size: cover;
   background-position: center;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 30px; }
   .our-recordings .recording-box:before {
     content: '';
     background-color: #1B1B1E8B;
@@ -775,8 +776,7 @@ section.home-about-area .content ul + a {
     left: 0;
     top: 0;
     bottom: 0;
-    right: 0;
-    border-radius: 30px; }
+    right: 0; }
   .our-recordings .recording-box .inner {
     position: absolute;
     left: 0;
