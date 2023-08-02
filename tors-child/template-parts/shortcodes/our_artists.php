@@ -105,14 +105,14 @@ else { ?>
     // With pre-decoded audio data
     const wavesurfer = WaveSurfer.create({
       "container": document.getElementById($id),
-      "height": 20,
+      "height": 30,
       "splitChannels": false,
       "normalize": true,
       "waveColor": "#6e6e6d",
       "progressColor": "#ffffff",
       "cursorColor": "#ddd5e9",
       "cursorWidth": 4,
-      "barWidth": 4,
+      "barWidth": 3,
       "barGap": 3,
       "barRadius": 30,
       "barHeight": null,
