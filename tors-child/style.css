@@ -772,65 +772,73 @@ section.home-about-area .content ul + a {
   .mySwiperRecordings .swiper-pagination {
     position: static;
     margin-top: 40px; }
+    .mySwiperRecordings .swiper-pagination .swiper-pagination-bullet {
+      width: 17px;
+      height: 17px;
+      background-color: #E0E0E0; }
+      .mySwiperRecordings .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #8D8C8C; }
 
-.our-recordings:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  bottom: 0;
-  background-color: #2B3841;
-  right: 0; }
-.our-recordings .recording-box {
-  padding: 50%;
-  position: relative;
-  margin-bottom: 24px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  border-radius: 30px; }
-  .our-recordings .recording-box:before {
+.our-recordings {
+  padding-bottom: 50px; }
+  .our-recordings:before {
     content: '';
-    background-color: #1B1B1E8B;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 50%;
     bottom: 0;
+    background-color: #2B3841;
     right: 0; }
-  .our-recordings .recording-box .inner {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    padding: 30px; }
-    .our-recordings .recording-box .inner .name-box h3 {
-      font-size: 34px;
-      color: var(--e-global-color-accent);
-      font-weight: bold; }
-    .our-recordings .recording-box .inner .title-box {
-      color: var(--white-color);
-      font-size: 18px; }
-  .our-recordings .recording-box .audio-box-wrapper {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-    right: 30px; }
-    .our-recordings .recording-box .audio-box-wrapper .before-audio {
-      margin-bottom: 10px; }
-    .our-recordings .recording-box .audio-box-wrapper .audio-label {
-      flex: 0 08 80px;
+  .our-recordings .recording-box {
+    padding: 50%;
+    position: relative;
+    margin-bottom: 24px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 30px; }
+    .our-recordings .recording-box:before {
+      content: '';
+      background-color: #1B1B1E8B;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+    .our-recordings .recording-box .inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 30px; }
+      .our-recordings .recording-box .inner .name-box h3 {
+        font-size: 34px;
+        color: var(--e-global-color-accent);
+        font-weight: bold; }
+      .our-recordings .recording-box .inner .title-box {
+        color: var(--white-color);
+        font-size: 18px; }
+    .our-recordings .recording-box .audio-box-wrapper {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      right: 30px; }
+      .our-recordings .recording-box .audio-box-wrapper .before-audio {
+        margin-bottom: 10px; }
+      .our-recordings .recording-box .audio-box-wrapper .audio-label {
+        flex: 0 08 80px;
+        font-size: 20px;
+        color: var(--white-color); }
+      .our-recordings .recording-box .audio-box-wrapper .audio-box {
+        flex: 1 0 0%; }
+  .our-recordings .text-box {
+    text-align: center;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto; }
+    .our-recordings .text-box p {
       font-size: 20px;
       color: var(--white-color); }
-    .our-recordings .recording-box .audio-box-wrapper .audio-box {
-      flex: 1 0 0%; }
-.our-recordings .text-box {
-  text-align: center;
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: auto; }
-  .our-recordings .text-box p {
-    font-size: 20px;
-    color: var(--white-color); }
 
 /*# sourceMappingURL=style.css.map */

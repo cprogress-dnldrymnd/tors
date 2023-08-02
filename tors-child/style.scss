@@ -1124,10 +1124,21 @@ section.home-about-area .content ul+a {
   .swiper-pagination {
     position: static;
     margin-top: 40px;
+
+    .swiper-pagination-bullet {
+      width: 17px;
+      height: 17px;
+      background-color: #E0E0E0;
+      &.swiper-pagination-bullet-active {
+        background-color: #8D8C8C;
+      }
+    }
   }
 }
 
 .our-recordings {
+  padding-bottom: 50px;
+
   &:before {
     content: '';
     position: absolute;
