@@ -48,16 +48,7 @@ else { ?>
     <p>No recordings found</p>
   </div>
 <?php } ?>
-<script>
-  var swiper = new Swiper(".mySwiperRecordings", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-</script>
+
 <script>
   // With pre-decoded audio data
 
