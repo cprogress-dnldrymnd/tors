@@ -37,12 +37,7 @@ $query = new WP_Query($args);
             <div class="audio-box">
               <?php if ($before_audio) { ?>
                 <div id="before-audio-<?= get_the_ID() ?>">
-                 
                 </div>
-
-                 <script>
-                    wavesurfer('before-audio-<?= get_the_ID() ?>');
-                 </script>
               <?php } ?>
             </div>
           </div>
@@ -64,7 +59,24 @@ else { ?>
 <?php } ?>
 
 <script>
-  function wavesurfer($id) {
+
+  <?php
+  while ($query->have_posts()) {
+    $before_audio = carbon_get_the_post_meta('before_audio');
+    $after_audio = carbon_get_the_post_meta('after_audio');
+
+    if ($before_audio) {
+      $id = 'before-audio-' . get_the_ID();
+      $before_audio_url = wp_get_attachment_url($before_audio);
+      ?>
+      wavesurfer($id, $before_audio_url);
+      <?php
+    }
+  }
+  wp_reset_postdata();
+  ?>
+
+  function wavesurfer($id, $url) {
     // With pre-decoded audio data
     const wavesurfer = WaveSurfer.create({
       container: document.getElementById($id),
@@ -73,7 +85,7 @@ else { ?>
       barWidth: 10,
       barRadius: 10,
       barGap: 2,
-      url: 'https://tors.theprogressteam.com/wp-content/uploads/2023/08/before.mp3',
+      url: $url,
       peaks: [
         [
           0, 0.0023595101665705442, 0.012107174843549728, 0.005919494666159153, -0.31324470043182373, 0.1511787623167038,
