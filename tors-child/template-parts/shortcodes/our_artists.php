@@ -9,7 +9,7 @@ $query = new WP_Query($args);
 
 <?php if ($query->have_posts()) { ?>
   <div class="our-recordings">
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiperRecordings">
       <div class="swiper-wrapper">
         <?php while ($query->have_posts()) { ?>
           <?php
@@ -43,3 +43,13 @@ else { ?>
     <p>No recordings found</p>
   </div>
 <?php } ?>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiperRecordings", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
