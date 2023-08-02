@@ -841,4 +841,8 @@ section.home-about-area .content ul + a {
       font-size: 20px;
       color: var(--white-color); }
 
+.logo-slider .swiper-slide .swiper-slide-inner {
+  padding-left: 10px;
+  padding-right: 10px; }
+
 /*# sourceMappingURL=style.css.map */

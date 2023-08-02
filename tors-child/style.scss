@@ -1129,6 +1129,7 @@ section.home-about-area .content ul+a {
       width: 17px;
       height: 17px;
       background-color: #E0E0E0;
+
       &.swiper-pagination-bullet-active {
         background-color: #8D8C8C;
       }
@@ -1219,6 +1220,15 @@ section.home-about-area .content ul+a {
     p {
       font-size: 20px;
       color: var(--white-color);
+    }
+  }
+}
+
+.logo-slider {
+  .swiper-slide {
+    .swiper-slide-inner {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
