@@ -1225,6 +1225,10 @@ section.home-about-area .content ul+a {
 }
 
 .logo-slider {
+  .swiper-wrapper {
+    transition-timing-function: linear !important;
+  }
+
   .swiper-slide {
     .swiper-slide-inner {
       padding-left: 10px;
