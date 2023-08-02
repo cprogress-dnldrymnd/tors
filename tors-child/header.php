@@ -12,6 +12,7 @@
             href="<?php if (isset($moroko_redux_demo['favicon']['url'])) { ?><?php echo esc_url($moroko_redux_demo['favicon']['url']); ?><?php } ?>">
     <?php } ?>
     <?php wp_head(); ?>
+    <script src="https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.min.js"></script>
 </head>
 
 <body <?php body_class('dark-index'); ?>>
