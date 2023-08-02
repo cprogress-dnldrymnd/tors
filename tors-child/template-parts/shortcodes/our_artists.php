@@ -123,10 +123,10 @@ else { ?>
       "autoplay": false,
       "interact": true,
       "hideScrollbar": false,
-      "audioRate": 1.9,
+      "audioRate": 1,
       "autoScroll": true,
       "autoCenter": true,
-      "sampleRate": 28000
+      "sampleRate": 8000
     })
 
     wavesurfer.on('interaction', () => {
