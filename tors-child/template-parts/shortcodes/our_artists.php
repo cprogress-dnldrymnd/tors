@@ -88,8 +88,8 @@ else { ?>
     // With pre-decoded audio data
     const wavesurfer = WaveSurfer.create({
       container: document.getElementById($id),
-      waveColor: 'rgb(0, 0, 0)',
-      progressColor: 'rgb(100, 0, 100)',
+      waveColor: 'rgb(255, 255, 255)',
+      progressColor: 'rgb(0, 0, 0)',
       barWidth: 4,
       barRadius: 0,
       barGap: 2,
