@@ -89,13 +89,7 @@ else { ?>
       wavesurfer($id, $before_audio_url);
       <?php
     }
-    if ($after_audio) {
-      ?>
-      $id = 'after-audio-<?= get_the_ID() ?>';
-      $after_audio_url = '<?= wp_get_attachment_url($after_audio); ?>';
-      wavesurfer($id, $after_audio_url);
-      <?php
-    }
+   
 
   }
   wp_reset_postdata();
