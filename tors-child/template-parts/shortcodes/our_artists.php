@@ -31,7 +31,7 @@ $query = new WP_Query($args);
                 </div>
                 <div class="audio-box">
                   <?php if ($before_audio) { ?>
-                    <div class="audio-box-holder d-flex">
+                    <div class="audio-box-holder d-flex align-items-center">
                       <div class="label">
                         Before
                       </div>
@@ -90,8 +90,8 @@ else { ?>
       container: document.getElementById($id),
       waveColor: 'rgb(0, 0, 0)',
       progressColor: 'rgb(100, 0, 100)',
-      barWidth: 10,
-      barRadius: 10,
+      barWidth: 4,
+      barRadius: 0,
       barGap: 2,
       url: $url,
       peaks: [
