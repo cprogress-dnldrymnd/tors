@@ -107,7 +107,7 @@ else { ?>
       "container": document.getElementById($id),
       "height": 40,
       "splitChannels": false,
-      "normalize": false,
+      "normalize": true,
       "waveColor": "#6e6e6d",
       "progressColor": "#ffffff",
       "cursorColor": "#ddd5e9",
