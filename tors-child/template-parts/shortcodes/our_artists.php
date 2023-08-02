@@ -20,11 +20,13 @@ $query = new WP_Query($args);
           <!-- Swiper -->
           <div class="swiper-slide">
             <div class="recording-box" style="background-image: url(<?= $background_image ?>)">
-              <div class="name-box">
-                <h3><?= $artist ?></h3>
-              </div>
-              <div class="title-box">
-                <span><?php the_title() ?></span>
+              <div class="inner">
+                <div class="name-box">
+                  <h3><?= $artist ?></h3>
+                </div>
+                <div class="title-box">
+                  <span><?php the_title() ?></span>
+                </div>
               </div>
             </div>
             <div class="text-box">
@@ -46,4 +48,3 @@ else { ?>
     <p>No recordings found</p>
   </div>
 <?php } ?>
-

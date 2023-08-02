@@ -1107,3 +1107,43 @@ section.home-about-area .content ul+a {
 .clear-selection {
   cursor: pointer;
 }
+
+.our-recordings {
+  .recording-box {
+    padding: 50%;
+    position: relative;
+    margin-bottom: 24px;
+
+    .inner {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 30px;
+      border-radius: 30px;
+
+      .name-box h3 {
+        font-size: 34px;
+        color: var(--e-global-color-accent);
+        font-weight: bold;
+      }
+
+      .title-box {
+        color: var(--white-color);
+        font-size: 18px;
+      }
+    }
+  }
+
+  .text-box {
+    text-align: center;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+      color: var(--white-color);
+      font-size: 20px;
+    }
+  }
+}
