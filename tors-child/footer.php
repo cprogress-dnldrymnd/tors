@@ -91,3 +91,15 @@
 </body>
 
 </html>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiperRecordings", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
