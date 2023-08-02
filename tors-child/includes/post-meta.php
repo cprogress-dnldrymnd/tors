@@ -30,9 +30,9 @@ Container::make('post_meta', 'Audio')
   ->where('post_type', '=', 'recordings')
   ->add_fields(
     array(
-      Field::make('file', 'before_audio', __('Before Audio'))
+      Field::make('file', 'before_audio', __('Before Audio'))->set_width(20)
         ->set_type(array('audio')),
-      Field::make('file', 'after_audio', __('After Audio'))
+      Field::make('file', 'after_audio', __('After Audio'))->set_width(80)
         ->set_type(array('audio')),
     )
   );
