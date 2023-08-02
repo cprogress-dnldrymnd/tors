@@ -111,7 +111,7 @@ else { ?>
       barRadius: 3,
       barGap: 2,
       url: $url,
-      height: 40,
+      height: 30,
       cursorColor: '#fff',
       cursorWidth: 1,
       normalize: true,
