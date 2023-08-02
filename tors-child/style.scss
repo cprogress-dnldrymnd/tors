@@ -1110,6 +1110,12 @@ section.home-about-area .content ul+a {
 
 .mySwiperRecordings {
   overflow: hidden;
+  .swiper-button-prev {
+    left: -50px;
+  }
+  .swiper-button-next {
+    right: -50px;
+  }
 }
 .our-recordings {
   .recording-box {

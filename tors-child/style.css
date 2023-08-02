@@ -763,6 +763,10 @@ section.home-about-area .content ul + a {
 
 .mySwiperRecordings {
   overflow: hidden; }
+  .mySwiperRecordings .swiper-button-prev {
+    left: -50px; }
+  .mySwiperRecordings .swiper-button-next {
+    right: -50px; }
 
 .our-recordings .recording-box {
   padding: 50%;
