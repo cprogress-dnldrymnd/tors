@@ -107,8 +107,8 @@ else { ?>
       container: document.getElementById($id),
       waveColor: 'rgb(255, 255, 255)',
       progressColor: 'rgb(0, 0, 0)',
-      barWidth: 4,
-      barRadius: 0,
+      barWidth: 3,
+      barRadius: 2,
       barGap: 1,
       url: $url,
       peaks: [
