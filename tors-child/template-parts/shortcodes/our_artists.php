@@ -29,22 +29,23 @@ $query = new WP_Query($args);
                 <div class="title-box">
                   <span><?php the_title() ?></span>
                 </div>
+                <div class="audio-box">
+                  <?php if ($before_audio) { ?>
+                    <div class="before-audio-box d-flex">
+                      <div class="label">
+                        Before
+                      </div>
+                      <div id="before-audio-<?= get_the_ID() ?>">
+                      </div>
+                    </div>
+                  <?php } ?>
+                </div>
               </div>
             </div>
             <div class="text-box">
               <?= wpautop(get_the_content()) ?>
             </div>
-            <div class="audio-box">
-              <?php if ($before_audio) { ?>
-                <div class="before-audio-box d-flex">
-                  <div class="label">
-                    Before
-                  </div>
-                  <div id="before-audio-<?= get_the_ID() ?>">
-                  </div>
-                </div>
-              <?php } ?>
-            </div>
+
           </div>
         <?php } ?>
         <?php
