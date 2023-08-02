@@ -164,11 +164,11 @@ new newPostType(
 
 new newTaxonomy(
 	array(
-		'taxonomy'  => 'clients',
+		'taxonomy'  => 'artists',
 		'post_type' => 'recordings',
 		'args'      => array(
 			'hierarchical' => true,
-			'label'        => 'Client',
+			'label'        => 'Artist',
 			'query_var'    => true,
 			'has_archive'  => true,
 		)
