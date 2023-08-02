@@ -33,9 +33,18 @@ $query = new WP_Query($args);
                   <?php if ($before_audio) { ?>
                     <div class="audio-box-holder d-flex align-items-center">
                       <div class="label">
-                        Before
+                        Before:
                       </div>
                       <div class="audio-box" id="before-audio-<?= get_the_ID() ?>">
+                      </div>
+                    </div>
+                  <?php } ?>
+                  <?php if ($after_audio) { ?>
+                    <div class="audio-box-holder d-flex align-items-center">
+                      <div class="label">
+                        Before:
+                      </div>
+                      <div class="audio-box" id="after-audio-<?= get_the_ID() ?>">
                       </div>
                     </div>
                   <?php } ?>
@@ -80,6 +89,14 @@ else { ?>
       wavesurfer($id, $before_audio_url);
       <?php
     }
+    if ($after_audio) {
+      ?>
+      $id = 'after-audio-<?= get_the_ID() ?>';
+      $after_audio_url = '<?= wp_get_attachment_url($after_audio); ?>';
+      wavesurfer($id, $after_audio_url);
+      <?php
+    }
+
   }
   wp_reset_postdata();
   ?>
