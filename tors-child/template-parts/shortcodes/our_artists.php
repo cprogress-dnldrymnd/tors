@@ -116,7 +116,6 @@ else { ?>
       "barGap": 3,
       "barRadius": 30,
       "barHeight": null,
-      "barAlign": "bottom",
       "minPxPerSec": 1,
       "fillParent": true,
       "url": $url,
