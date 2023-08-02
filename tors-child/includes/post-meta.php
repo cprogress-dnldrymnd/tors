@@ -27,7 +27,7 @@ Container::make('theme_options', __('Get a Quote Form'))
 /* Recordings
 /*-----------------------------------------------------------------------------------*/
 Container::make('post_meta', 'Custom Data')
-  ->where('post_type', '=', 'page')
+  ->where('post_type', '=', 'recordings')
   ->add_fields(
     array(
       Field::make('file', 'before_audio', __('Before Audio'))
