@@ -5,7 +5,7 @@ use Carbon_Fields\Field;
 
 
 /*-----------------------------------------------------------------------------------*/
-/* Header, Body and Footer Scripts
+/* Get a Quote
 /*-----------------------------------------------------------------------------------*/
 Container::make('theme_options', __('Get a Quote Form'))
   ->add_fields(
@@ -20,5 +20,17 @@ Container::make('theme_options', __('Get a Quote Form'))
         ->set_layout('tabbed-vertical')
         ->set_header_template('<%- name  %>'),
 
+    )
+  );
+
+/*-----------------------------------------------------------------------------------*/
+/* Recordings
+/*-----------------------------------------------------------------------------------*/
+Container::make('post_meta', 'Custom Data')
+  ->where('post_type', '=', 'page')
+  ->add_fields(
+    array(
+      Field::make('file', 'before_audio', __('Before Audio')),
+      Field::make('file', 'after_audio', __('After Audio'))
     )
   );
