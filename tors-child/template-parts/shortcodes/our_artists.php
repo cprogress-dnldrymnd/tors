@@ -15,7 +15,7 @@ $query = new WP_Query($args);
           <?php
           $query->the_post();
           $artist = get_the_terms(get_the_ID(), 'artists')[0]->name;
-          $background_image = get_the_post_thumbnail_url( get_the_ID(), 'large' );
+          $background_image = get_the_post_thumbnail_url(get_the_ID(), 'large');
           ?>
           <!-- Swiper -->
           <div class="swiper-slide">
@@ -26,6 +26,9 @@ $query = new WP_Query($args);
               <div class="title-box">
                 <span><?php the_title() ?></span>
               </div>
+            </div>
+            <div class="text-box">
+              <?php the_content() ?>
             </div>
           </div>
         <?php } ?>
@@ -44,12 +47,3 @@ else { ?>
   </div>
 <?php } ?>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiperRecordings", {
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
