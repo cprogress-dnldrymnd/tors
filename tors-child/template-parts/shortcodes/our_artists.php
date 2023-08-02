@@ -104,17 +104,30 @@ else { ?>
   function wavesurfer($id, $url) {
     // With pre-decoded audio data
     const wavesurfer = WaveSurfer.create({
-      container: document.getElementById($id),
-      waveColor: '#6E6E6E',
-      progressColor: '#ffffff',
-      barWidth: 3,
-      barRadius: 3,
-      barGap: 2,
-      url: $url,
-      height: 30,
-      cursorColor: '#fff',
-      cursorWidth: 1,
-      normalize: true,
+      "container": document.getElementById($id),
+      "height": 56,
+      "splitChannels": false,
+      "normalize": false,
+      "waveColor": "#6e6e6d",
+      "progressColor": "#ffffff",
+      "cursorColor": "#ddd5e9",
+      "cursorWidth": 4,
+      "barWidth": 4,
+      "barGap": 3,
+      "barRadius": 30,
+      "barHeight": null,
+      "barAlign": "bottom",
+      "minPxPerSec": 1,
+      "fillParent": true,
+      "url": $url,
+      "mediaControls": true,
+      "autoplay": false,
+      "interact": true,
+      "hideScrollbar": false,
+      "audioRate": 1.9,
+      "autoScroll": true,
+      "autoCenter": true,
+      "sampleRate": 28000
     })
 
     wavesurfer.on('interaction', () => {
