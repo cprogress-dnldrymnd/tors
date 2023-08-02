@@ -32,7 +32,7 @@ $query = new WP_Query($args);
                 <div class="audio-box-wrapper">
                   <?php if ($before_audio) { ?>
                     <div class="audio-box-holder d-flex align-items-center">
-                      <div class="label">
+                      <div class="audio-label">
                         Before:
                       </div>
                       <div class="audio-box before-audio" id="before-audio-<?= get_the_ID() ?>">
@@ -41,7 +41,7 @@ $query = new WP_Query($args);
                   <?php } ?>
                   <?php if ($after_audio) { ?>
                     <div class="audio-box-holder d-flex align-items-center">
-                      <div class="label">
+                      <div class="audio-label">
                         After:
                       </div>
                       <div class="audio-box" id="after-audio-<?= get_the_ID() ?>">

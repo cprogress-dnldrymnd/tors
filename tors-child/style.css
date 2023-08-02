@@ -764,10 +764,14 @@ section.home-about-area .content ul + a {
 .mySwiperRecordings {
   overflow: hidden; }
   .mySwiperRecordings .swiper-button-prev.swiper-button-prev {
-    left: -50px; }
+    left: -50px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z" fill="%23000"/></svg>'); }
   .mySwiperRecordings .swiper-button-next.swiper-button-next {
     right: -50px;
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z" fill="%23007aff"/></svg>'); }
+  .mySwiperRecordings .swiper-pagination {
+    position: static;
+    margin-top: 40px; }
 
 .our-recordings .recording-box {
   padding: 50%;
@@ -806,10 +810,10 @@ section.home-about-area .content ul + a {
     right: 30px; }
     .our-recordings .recording-box .audio-box-wrapper .before-audio {
       margin-bottom: 10px; }
-    .our-recordings .recording-box .audio-box-wrapper .label {
+    .our-recordings .recording-box .audio-box-wrapper .audio-label {
       flex: 0 08 80px;
       font-size: 20px;
-      color: #fff; }
+      color: var(--white-color); }
     .our-recordings .recording-box .audio-box-wrapper .audio-box {
       flex: 1 0 0%; }
 .our-recordings .text-box {
@@ -818,6 +822,7 @@ section.home-about-area .content ul + a {
   margin-left: auto;
   margin-right: auto; }
   .our-recordings .text-box p {
-    font-size: 20px; }
+    font-size: 20px;
+    color: var(--white-color); }
 
 /*# sourceMappingURL=style.css.map */
