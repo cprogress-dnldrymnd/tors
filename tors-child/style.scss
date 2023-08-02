@@ -1110,13 +1110,17 @@ section.home-about-area .content ul+a {
 
 .mySwiperRecordings {
   overflow: hidden;
-  .swiper-button-prev {
+
+  .swiper-button-prev.swiper-button-prev {
     left: -50px;
   }
-  .swiper-button-next {
+
+  .swiper-button-next.swiper-button-next {
     right: -50px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z" fill="%23007aff"/></svg>');
   }
 }
+
 .our-recordings {
   .recording-box {
     padding: 50%;
@@ -1162,9 +1166,11 @@ section.home-about-area .content ul+a {
       bottom: 30px;
       left: 30px;
       right: 30px;
+
       .before-audio {
         margin-bottom: 10px;
       }
+
       .label {
         flex: 0 08 80px;
         font-size: 20px;
