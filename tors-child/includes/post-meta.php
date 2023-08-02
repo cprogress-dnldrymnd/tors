@@ -26,7 +26,7 @@ Container::make('theme_options', __('Get a Quote Form'))
 /*-----------------------------------------------------------------------------------*/
 /* Recordings
 /*-----------------------------------------------------------------------------------*/
-Container::make('post_meta', 'Custom Data')
+Container::make('post_meta', 'Audio')
   ->where('post_type', '=', 'recordings')
   ->add_fields(
     array(
