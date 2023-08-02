@@ -22,7 +22,7 @@ add_action('after_setup_theme', 'moroko_child_theme_setup');
 /*-----------------------------------------------------------------------------------*/
 function enqueue_scripts()
 {
-	wp_enqueue_script('tors-wavesurfer', assets_dir . 'wavesurfer/unpkg.com_wavesurfer.js@7.1.1_dist_wavesurfer.esm.js');
+	
 	wp_enqueue_script('tors-main', vendor_dir . 'javascripts/main.js');
 
 }
