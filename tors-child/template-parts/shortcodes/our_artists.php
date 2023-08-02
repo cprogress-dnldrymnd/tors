@@ -102,7 +102,6 @@ else { ?>
       waveColor: 'rgb(255, 255, 255)',
       progressColor: 'rgb(0, 0, 0)',
       barWidth: 4,
-      barHeight: 24,
       barRadius: 0,
       barGap: 1,
       url: $url,
