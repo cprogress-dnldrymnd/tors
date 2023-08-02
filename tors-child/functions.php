@@ -23,7 +23,7 @@ add_action('after_setup_theme', 'moroko_child_theme_setup');
 function enqueue_scripts()
 {
 	
-	wp_enqueue_script('tors-main', vendor_dir . 'javascripts/main.js');
+	wp_enqueue_script('tors-main', assets_dir . 'javascripts/main.js');
 
 }
 
