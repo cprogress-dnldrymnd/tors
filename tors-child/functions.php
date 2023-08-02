@@ -5,6 +5,11 @@
  * Declare textdomain for this child theme.
  * Translations can be filed in the /languages/ directory.
  */
+
+define('theme_dir', get_template_directory_uri() . '/');
+define('assets_dir', theme_dir . 'assets/');
+define('image_dir', assets_dir . 'images/');
+define('vendor_dir', assets_dir . 'vendors/');
 function moroko_child_theme_setup()
 {
 	load_child_theme_textdomain('moroko-child', get_stylesheet_directory() . '/languages');
@@ -12,6 +17,16 @@ function moroko_child_theme_setup()
 
 }
 add_action('after_setup_theme', 'moroko_child_theme_setup');
+/*-----------------------------------------------------------------------------------*/
+/* Enqueue Styles and Scripts
+/*-----------------------------------------------------------------------------------*/
+function enqueue_scripts()
+{
+	wp_enqueue_script('tors-wavesurfer', vendor_dir . 'wavesurfer/unpkg.com_wavesurfer.js@7.1.1_dist_wavesurfer.esm.js');
+
+}
+
+add_action('wp_enqueue_scripts', 'enqueue_scripts'); // Register this fxn and allow Wordpress to call it automatcally in the header
 
 /*-----------------------------------------------------------------------------------*/
 /* Register Carbofields
