@@ -36,7 +36,12 @@ $query = new WP_Query($args);
             </div>
             <div class="audio-box">
               <?php if ($before_audio) { ?>
-                <div id="before-audio-<?= get_the_ID() ?>">
+                <div class="before-audio-box d-flex">
+                  <div class="label">
+                    Before
+                  </div>
+                  <div id="before-audio-<?= get_the_ID() ?>">
+                  </div>
                 </div>
               <?php } ?>
             </div>
