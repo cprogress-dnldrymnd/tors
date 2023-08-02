@@ -131,6 +131,7 @@ else { ?>
     })
 
     wavesurfer.on('interaction', () => {
+      wavesurfer.stop()
       wavesurfer.play()
     })
 
