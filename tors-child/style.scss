@@ -1148,9 +1148,18 @@ section.home-about-area .content ul+a {
       }
     }
 
-    .before-audio-box {
+    .audio-box-holder {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      right: 30px;
+
       .label {
         flex: 0 08 80px;
+      }
+
+      .audio-box {
+        flex: 1 0 0%;
       }
     }
   }
