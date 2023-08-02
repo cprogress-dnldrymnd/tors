@@ -35,7 +35,7 @@ $query = new WP_Query($args);
                       <div class="label">
                         Before:
                       </div>
-                      <div class="audio-box" id="before-audio-<?= get_the_ID() ?>">
+                      <div class="audio-box before-audio" id="before-audio-<?= get_the_ID() ?>">
                       </div>
                     </div>
                   <?php } ?>
@@ -105,8 +105,8 @@ else { ?>
     // With pre-decoded audio data
     const wavesurfer = WaveSurfer.create({
       container: document.getElementById($id),
-      waveColor: 'rgb(255, 255, 255)',
-      progressColor: 'rgb(0, 0, 0)',
+      waveColor: '#6E6E6E',
+      progressColor: '#ffffff',
       barWidth: 3,
       barRadius: 3,
       barGap: 2,

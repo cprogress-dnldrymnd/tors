@@ -1153,7 +1153,9 @@ section.home-about-area .content ul+a {
       bottom: 30px;
       left: 30px;
       right: 30px;
-
+      .before-audio {
+        margin-bottom: 10px;
+      }
       .label {
         flex: 0 08 80px;
       }

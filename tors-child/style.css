@@ -796,6 +796,8 @@ section.home-about-area .content ul + a {
     bottom: 30px;
     left: 30px;
     right: 30px; }
+    .our-recordings .recording-box .audio-box-wrapper .before-audio {
+      margin-bottom: 10px; }
     .our-recordings .recording-box .audio-box-wrapper .label {
       flex: 0 08 80px; }
     .our-recordings .recording-box .audio-box-wrapper .audio-box {
