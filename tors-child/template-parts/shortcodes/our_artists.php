@@ -35,9 +35,15 @@ $query = new WP_Query($args);
               <?= wpautop(get_the_content()) ?>
             </div>
             <div class="audio-box">
-              <div id="before-audio">
+              <?php if ($before_audio) { ?>
+                <div id="before-audio-<?= get_the_ID() ?>">
+                 
+                </div>
 
-              </div>
+                 <script>
+                    wavesurfer('before-audio-<?= get_the_ID() ?>');
+                 </script>
+              <?php } ?>
             </div>
           </div>
         <?php } ?>
