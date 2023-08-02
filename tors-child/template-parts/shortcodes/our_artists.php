@@ -120,7 +120,6 @@ else { ?>
       "minPxPerSec": 1,
       "fillParent": true,
       "url": $url,
-      "mediaControls": true,
       "autoplay": false,
       "interact": true,
       "hideScrollbar": false,
