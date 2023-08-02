@@ -42,7 +42,7 @@ $query = new WP_Query($args);
                   <?php if ($after_audio) { ?>
                     <div class="audio-box-holder d-flex align-items-center">
                       <div class="label">
-                        Before:
+                        After:
                       </div>
                       <div class="audio-box" id="after-audio-<?= get_the_ID() ?>">
                       </div>
