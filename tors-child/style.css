@@ -791,14 +791,14 @@ section.home-about-area .content ul + a {
     .our-recordings .recording-box .inner .title-box {
       color: var(--white-color);
       font-size: 18px; }
-  .our-recordings .recording-box .audio-box-holder {
+  .our-recordings .recording-box .audio-box {
     position: absolute;
     bottom: 30px;
     left: 30px;
     right: 30px; }
-    .our-recordings .recording-box .audio-box-holder .label {
+    .our-recordings .recording-box .audio-box .label {
       flex: 0 08 80px; }
-    .our-recordings .recording-box .audio-box-holder .audio-box {
+    .our-recordings .recording-box .audio-box .audio-box {
       flex: 1 0 0%; }
 .our-recordings .text-box {
   text-align: center;
