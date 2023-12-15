@@ -6,7 +6,6 @@ $args = array(
 $query = new WP_Query($args);
 
 ?>
-
 <?php if ($query->have_posts()) { ?>
   <div class="our-recordings">
     <div class="container">
