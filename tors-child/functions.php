@@ -15,10 +15,7 @@ function moroko_child_theme_setup()
 {
 	load_child_theme_textdomain('moroko-child', get_stylesheet_directory() . '/languages');
 
-	if (is_front_page()) {
-		wp_enqueue_style('swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
-		wp_enqueue_script('swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
-	}
+
 	//include_once('plugins/tors-elementor/tors-elementor.php');
 
 }
@@ -29,8 +26,10 @@ add_action('after_setup_theme', 'moroko_child_theme_setup');
 function enqueue_scripts()
 {
 
-	//wp_enqueue_script('tors-main', assets_dir . 'javascripts/main.js');
-
+	if (is_front_page()) {
+		wp_enqueue_style('swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
+		wp_enqueue_script('swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
+	}
 }
 
 add_action('wp_enqueue_scripts', 'enqueue_scripts'); // Register this fxn and allow Wordpress to call it automatcally in the header
