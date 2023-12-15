@@ -14,13 +14,12 @@ Text Domain:  tors-child
   --text-color: #666666;
 }
 
-body,
-p,
-li,
-.tab-content-area label {
+body {
   font-family: "CircularStd", sans-serif !important;
+  p, li {
+    font-family: inherit !important;
+  }
 }
-
 .content.content {
   color: var(--text-color);
   * {
@@ -33,7 +32,6 @@ li,
   h6 {
     font-weight: 400;
     line-height: 1.2;
-    font-family: "CircularStd", sans-serif !important;
   }
   p {
     font-size: 20px;
