@@ -34,6 +34,11 @@ body {
   * {
     color: inherit;
   }
+  h3 {
+    @media(min-width: 992px) {
+      font-size: 36px;
+    }
+  }
   h3,
   h2,
   h4,
