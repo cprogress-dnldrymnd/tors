@@ -14,8 +14,11 @@ define('vendor_dir', assets_dir . 'vendors/');
 function moroko_child_theme_setup()
 {
 	load_child_theme_textdomain('moroko-child', get_stylesheet_directory() . '/languages');
-	wp_enqueue_style('swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
-	wp_enqueue_script('swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
+
+	if (is_front_page()) {
+		wp_enqueue_style('swiper-css', vendor_dir . 'swiper/swiper-bundle.min.css');
+		wp_enqueue_script('swiper-js', vendor_dir . 'swiper/swiper-bundle.min.js');
+	}
 	//include_once('plugins/tors-elementor/tors-elementor.php');
 
 }
