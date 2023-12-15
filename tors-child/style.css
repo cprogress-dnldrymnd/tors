@@ -24,7 +24,8 @@ body {
   body h5,
   body h6,
   body label {
-    font-family: inherit !important; }
+    font-family: inherit !important;
+    line-height: inherit; }
 
 .content.content {
   color: var(--text-color); }
