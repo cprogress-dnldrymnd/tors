@@ -1236,3 +1236,6 @@ section.home-about-area .content ul + a {
     margin-top: 0 !important;
   }
 }
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+  font-weight: inherit;
+}

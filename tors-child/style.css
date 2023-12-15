@@ -862,4 +862,7 @@ section.home-about-area .content ul + a {
   padding-bottom: 40px;
   margin-top: 0 !important; }
 
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-] > a {
+  font-weight: inherit; }
+
 /*# sourceMappingURL=style.css.map */
