@@ -75,11 +75,9 @@ else { ?>
 <?php } ?>
 
 <script>
-
   <?php
   while ($query->have_posts()) {
     $query->the_post();
-
     $before_audio = carbon_get_the_post_meta('before_audio');
     $after_audio = carbon_get_the_post_meta('after_audio');
 
