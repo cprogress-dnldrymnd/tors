@@ -29,26 +29,7 @@ $query = new WP_Query($args);
                   <div class="title-box">
                     <span><?php the_title() ?></span>
                   </div>
-                  <div class="audio-box-wrapper">
-                    <?php if ($before_audio) { ?>
-                      <div class="audio-box-holder d-flex align-items-center">
-                        <div class="audio-label">
-                          Before:
-                        </div>
-                        <div class="audio-box before-audio" id="before-audio-<?= get_the_ID() ?>">
-                        </div>
-                      </div>
-                    <?php } ?>
-                    <?php if ($after_audio) { ?>
-                      <div class="audio-box-holder d-flex align-items-center">
-                        <div class="audio-label">
-                          After:
-                        </div>
-                        <div class="audio-box" id="after-audio-<?= get_the_ID() ?>">
-                        </div>
-                      </div>
-                    <?php } ?>
-                  </div>
+                  
                 </div>
               </div>
               <div class="text-box">
