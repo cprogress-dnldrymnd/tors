@@ -25,7 +25,6 @@ body {
   body h6,
   body label {
     font-family: inherit !important;
-    line-height: inherit !important;
     color: inherit !important; }
 
 .content.content ul li:not(:last-child) {
