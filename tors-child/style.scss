@@ -13,57 +13,6 @@ Text Domain:  tors-child
   --black-color: #000;
 }
 
-$font-url: "./assets/fonts/" !default;
-
-@mixin font-face($fontFamily, $path, $fileName, $fontStyle: normal, $fontWeight: false) {
-  @each $name, $weight in $fontWeight {
-    @font-face {
-      font-family: $fontFamily;
-      src: url("#{$path + $fileName}-#{$name}.eot");
-      src:
-        url("#{$path + $fileName}-#{$name}.eot?#iefix") format("embedded-opentype"),
-        url("#{$path + $fileName}-#{$name}.woff2") format("woff2"),
-        url("#{$path + $fileName}-#{$name}.woff") format("woff"),
-        url("#{$path + $fileName}-#{$name}.ttf") format("truetype"),
-        url("#{$path + $fileName}-#{$name}.svg##{$fileName}-#{$name}") format("svg");
-
-      font-weight: $weight;
-      font-style: $fontStyle;
-      font-display: swap;
-    }
-  }
-}
-
-$CircularStd: (
-  "Book": 500,
-  "Bold": 700
-);
-
-@include font-face("CircularStd", $font-url + "CircularStd/", "CircularStd", normal, $CircularStd);
-.elementor-kit-344.elementor-kit-344.elementor-kit-344 {
-  --e-global-typography-primary-font-family: "CircularStd", sans-serif !important;
-  --e-global-typography-secondary-font-family: "CircularStd", sans-serif !important;
-  --e-global-typography-text-font-family: "CircularStd", sans-serif !important;
-  --e-global-typography-accent-font-family: "CircularStd", sans-serif !important;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-p,
-li,
-.elementor-widget-button .elementor-button,
-.button-large {
-  font-family: "CircularStd", sans-serif !important;
-}
 
 @media screen and (min-width: 768px) and (max-width: 819px) {
   body.logged-in header {

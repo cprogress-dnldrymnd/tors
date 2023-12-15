@@ -12,44 +12,6 @@ Text Domain:  tors-child
   --dark-color: #151515;
   --black-color: #000; }
 
-@font-face {
-  font-family: "CircularStd";
-  src: url("./assets/fonts/CircularStd/CircularStd-Book.eot");
-  src: url("./assets/fonts/CircularStd/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/CircularStd/CircularStd-Book.woff2") format("woff2"), url("./assets/fonts/CircularStd/CircularStd-Book.woff") format("woff"), url("./assets/fonts/CircularStd/CircularStd-Book.ttf") format("truetype"), url("./assets/fonts/CircularStd/CircularStd-Book.svg#CircularStd-Book") format("svg");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap; }
-@font-face {
-  font-family: "CircularStd";
-  src: url("./assets/fonts/CircularStd/CircularStd-Bold.eot");
-  src: url("./assets/fonts/CircularStd/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/CircularStd/CircularStd-Bold.woff2") format("woff2"), url("./assets/fonts/CircularStd/CircularStd-Bold.woff") format("woff"), url("./assets/fonts/CircularStd/CircularStd-Bold.ttf") format("truetype"), url("./assets/fonts/CircularStd/CircularStd-Bold.svg#CircularStd-Bold") format("svg");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap; }
-.elementor-kit-344.elementor-kit-344.elementor-kit-344 {
-  --e-global-typography-primary-font-family: "CircularStd", sans-serif !important;
-  --e-global-typography-secondary-font-family: "CircularStd", sans-serif !important;
-  --e-global-typography-text-font-family: "CircularStd", sans-serif !important;
-  --e-global-typography-accent-font-family: "CircularStd", sans-serif !important; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-p,
-li,
-.elementor-widget-button .elementor-button,
-.button-large {
-  font-family: "CircularStd", sans-serif !important; }
-
 @media screen and (min-width: 768px) and (max-width: 819px) {
   body.logged-in header {
     margin-top: 45px !important; } }
