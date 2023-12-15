@@ -15,7 +15,15 @@ Text Domain:  tors-child
 
 body {
   font-family: "CircularStd", sans-serif !important; }
-  body p, body li {
+  body p,
+  body li,
+  body h1,
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6,
+  body label {
     font-family: inherit !important; }
 
 .content.content {
