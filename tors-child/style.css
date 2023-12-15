@@ -26,7 +26,12 @@ Text Domain:  tors-child
   font-weight: 700;
   font-style: normal;
   font-display: swap; }
-body,
+.elementor-kit-344.elementor-kit-344.elementor-kit-344 {
+  --e-global-typography-primary-font-family: "CircularStd", sans-serif !important;
+  --e-global-typography-secondary-font-family: "CircularStd", sans-serif !important;
+  --e-global-typography-text-font-family: "CircularStd", sans-serif !important;
+  --e-global-typography-accent-font-family: "CircularStd", sans-serif !important; }
+
 h1,
 h2,
 h3,
