@@ -454,6 +454,7 @@ section.home-about-area .content ul + a {
   align-items: center; }
 
 .logo-box .logo-img {
+  line-height: 1;
   margin-right: 1rem; }
 .logo-box .text {
   font-size: 30px;
