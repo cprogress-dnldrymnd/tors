@@ -10,20 +10,25 @@ Text Domain:  tors-child
 :root {
   --white-color: #fff;
   --dark-color: #151515;
-  --black-color: #000; }
+  --black-color: #000;
+  --text-color: #666666; }
 
 body,
 p,
 li {
   font-family: "CircularStd", sans-serif !important; }
 
-.content h3 {
-  font-weight: 400;
-  line-height: 1.2; }
-.content p {
-  font-size: 20px; }
-.content ul li:not(:last-child) {
-  margin-bottom: 5px; }
+.content {
+  color: var(--text-color); }
+  .content * {
+    color: inherit; }
+  .content h3 {
+    font-weight: 400;
+    line-height: 1.2; }
+  .content p {
+    font-size: 20px; }
+  .content ul li:not(:last-child) {
+    margin-bottom: 5px; }
 
 @media screen and (min-width: 768px) and (max-width: 819px) {
   body.logged-in header {
@@ -718,7 +723,7 @@ section.home-about-area .content ul + a {
   margin-top: 40px;
   padding-left: 0;
   font-size: 19px;
-  color: #666666; }
+  color: var(--text-color); }
   .get-a-quote-form .selection li {
     display: flex;
     align-items: center;

@@ -11,6 +11,7 @@ Text Domain:  tors-child
   --white-color: #fff;
   --dark-color: #151515;
   --black-color: #000;
+  --text-color: #666666;
 }
 
 body,
@@ -19,6 +20,10 @@ li {
   font-family: "CircularStd", sans-serif !important;
 }
 .content {
+  color: var(--text-color);
+  * {
+    color: inherit;
+  }
   h3 {
     font-weight: 400;
     line-height: 1.2;
@@ -1034,7 +1039,7 @@ section.home-about-area .content ul + a {
     margin-top: 40px;
     padding-left: 0;
     font-size: 19px;
-    color: #666666;
+    color: var(--text-color);
 
     li {
       display: flex;
