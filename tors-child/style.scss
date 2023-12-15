@@ -9,23 +9,23 @@ Text Domain:  tors-child
 */
 :root {
   --white-color: #fff;
+  --dark-color: #151515;
   --black-color: #000;
 }
 
 $font-url: "./assets/fonts/" !default;
 
 @mixin font-face($fontFamily, $path, $fileName, $fontStyle: normal, $fontWeight: false) {
-
-  @each $name,
-  $weight in $fontWeight {
+  @each $name, $weight in $fontWeight {
     @font-face {
       font-family: $fontFamily;
       src: url("#{$path + $fileName}-#{$name}.eot");
-      src: url("#{$path + $fileName}-#{$name}.eot?#iefix") format("embedded-opentype"),
-      url("#{$path + $fileName}-#{$name}.woff2") format("woff2"),
-      url("#{$path + $fileName}-#{$name}.woff") format("woff"),
-      url("#{$path + $fileName}-#{$name}.ttf") format("truetype"),
-      url("#{$path + $fileName}-#{$name}.svg##{$fileName}-#{$name}") format("svg");
+      src:
+        url("#{$path + $fileName}-#{$name}.eot?#iefix") format("embedded-opentype"),
+        url("#{$path + $fileName}-#{$name}.woff2") format("woff2"),
+        url("#{$path + $fileName}-#{$name}.woff") format("woff"),
+        url("#{$path + $fileName}-#{$name}.ttf") format("truetype"),
+        url("#{$path + $fileName}-#{$name}.svg##{$fileName}-#{$name}") format("svg");
 
       font-weight: $weight;
       font-style: $fontStyle;
@@ -36,9 +36,8 @@ $font-url: "./assets/fonts/" !default;
 
 $CircularStd: (
   "Book": 500,
-  "Bold": 700,
+  "Bold": 700
 );
-
 
 @include font-face("CircularStd", $font-url + "CircularStd/", "CircularStd", normal, $CircularStd);
 
@@ -59,7 +58,7 @@ p,
 li,
 .elementor-widget-button .elementor-button,
 .button-large {
-  font-family: 'CircularStd', sans-serif !important;
+  font-family: "CircularStd", sans-serif !important;
 }
 
 @media screen and (min-width: 768px) and (max-width: 819px) {
@@ -125,14 +124,14 @@ div.user-comment {
   position: relative;
 }
 
-@media(min-width:500px) {
+@media (min-width: 500px) {
   .comment-reply-link {
     right: 0px;
     top: 0px;
   }
 }
 
-@media(max-width:499px) {
+@media (max-width: 499px) {
   .users-list {
     margin-bottom: 45px;
   }
@@ -188,11 +187,11 @@ div.user-comment {
   box-shadow: unset;
 }
 
-.blog-items-area:has(.search-no-result)>div {
+.blog-items-area:has(.search-no-result) > div {
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .blog-items-area .search-no-result {
     padding-left: 100px;
     padding-right: 100px;
@@ -322,15 +321,15 @@ div.user-comment {
 
 /*-------- Contact -----------*/
 section.contact-area-sec span.wpcf7-not-valid-tip {
-  color: #54595F;
+  color: #54595f;
   margin-top: -15px;
   margin-bottom: 15px;
 }
 
 section.contact-area-sec div.wpcf7-validation-errors {
   display: flex;
-  color: #54595F;
-  border: 2px solid #54595F;
+  color: #54595f;
+  border: 2px solid #54595f;
 }
 
 /*-------- Footer -----------*/
@@ -350,14 +349,14 @@ footer form .news-letter input[type="submit"] {
 }
 
 /*-------- End Footer -----------*/
-@media(min-width: 281px) {
+@media (min-width: 281px) {
   .flikr-img-list li img {
     height: 75px;
   }
 }
 
 .img-holder-with-shadow {
-  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, .2) !important;
+  box-shadow: 0 5px 6px 1px rgba(0, 0, 0, 0.2) !important;
 }
 
 @media (max-width: 280px) {
@@ -374,7 +373,7 @@ footer form .news-letter input[type="submit"] {
   z-index: 1;
 }
 
-section.home-about-area .content ul+a {
+section.home-about-area .content ul + a {
   text-decoration: underline;
 }
 
@@ -396,7 +395,6 @@ section.home-about-area .content ul+a {
 }
 
 .text-white-big {
-
   p,
   li {
     color: var(--white-color);
@@ -411,7 +409,6 @@ section.home-about-area .content ul+a {
     right: 0;
     bottom: 0;
     top: 0;
-
 
     .elementor-button {
       padding: 30px !important;
@@ -429,13 +426,13 @@ section.home-about-area .content ul+a {
       }
 
       &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
         top: 0;
-        background-color: #FDCD556E;
+        background-color: #fdcd556e;
         opacity: 0;
         transition: 300ms;
         background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" id="Group_470" data-name="Group 470" width="202.884" height="202.884" viewBox="0 0 202.884 202.884"><path id="Path_253" data-name="Path 253" d="M544,1365.947v202.884" transform="translate(-442.558 -1365.947)" fill="none" stroke="%23fff" stroke-width="2"/><path id="Path_254" data-name="Path 254" d="M0,0V202.884" transform="translate(0 101.442) rotate(-90)" fill="none" stroke="%23fff" stroke-width="2"/></svg>');
@@ -445,7 +442,7 @@ section.home-about-area .content ul+a {
       }
 
       &:after {
-        content: '';
+        content: "";
         width: 10vw;
         height: 10vw;
       }
@@ -461,7 +458,7 @@ section.home-about-area .content ul+a {
 
 .elementor-widget-container,
 .elementor-text-editor {
-  >* {
+  > * {
     font-size: inherit;
   }
 }
@@ -475,9 +472,9 @@ section.home-about-area .content ul+a {
     }
 
     &:before {
-      content: '';
+      content: "";
       height: 1px;
-      background-color: #DDDDDD;
+      background-color: #dddddd;
       position: absolute;
       left: 0;
       right: 0;
@@ -488,12 +485,12 @@ section.home-about-area .content ul+a {
 }
 
 .home-about-area {
-  .tab-content-area input:checked+label {
+  .tab-content-area input:checked + label {
     background-color: #333333 !important;
     border-color: #333333 !important;
   }
 
-  .tab-content-area input+label {
+  .tab-content-area input + label {
     &:hover {
       background-color: #333333 !important;
       border-color: #333333 !important;
@@ -513,8 +510,7 @@ section.home-about-area .content ul+a {
 }
 
 .button-box {
-
-  >a,
+  > a,
   button,
   input[type="submit"] {
     font-size: 20px;
@@ -529,8 +525,7 @@ section.home-about-area .content ul+a {
   }
 
   &.button-accent {
-
-    >a,
+    > a,
     button,
     input[type="submit"] {
       border-color: var(--e-global-color-accent);
@@ -545,8 +540,7 @@ section.home-about-area .content ul+a {
   }
 
   &.button-white {
-
-    >a,
+    > a,
     button {
       background-color: var(--white-color);
     }
@@ -711,7 +705,7 @@ section.home-about-area .content ul+a {
 
 .header-area.header-area {
   #menu-toggle {
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       display: none;
     }
   }
@@ -719,7 +713,7 @@ section.home-about-area .content ul+a {
   nav {
     position: static;
 
-    >.menu {
+    > .menu {
       display: block !important;
       background-color: transparent;
       opacity: 1;
@@ -728,7 +722,7 @@ section.home-about-area .content ul+a {
       margin-bottom: 0;
       float: none;
 
-      >li {
+      > li {
         opacity: 1;
         visibility: visible;
         transform: none;
@@ -743,7 +737,7 @@ section.home-about-area .content ul+a {
         }
       }
 
-      @media(max-width: 767px) {
+      @media (max-width: 767px) {
         display: none !important;
       }
     }
@@ -768,7 +762,6 @@ section.home-about-area .content ul+a {
       color: var(--e-global-color-cea108a);
     }
   }
-
 }
 
 .row {
@@ -783,9 +776,9 @@ section.home-about-area .content ul+a {
 
 .custom-lists {
   &:before {
-    content: '';
+    content: "";
     position: absolute;
-    background-color: #E2E2E2;
+    background-color: #e2e2e2;
     width: 1px;
     left: 50%;
     top: 35px;
@@ -800,7 +793,7 @@ section.home-about-area .content ul+a {
       padding: 0;
 
       @media (min-width: 992px) {
-        width: 50% !important
+        width: 50% !important;
       }
     }
   }
@@ -819,7 +812,7 @@ section.home-about-area .content ul+a {
   }
 
   .elementor-image-box-title {
-    @media(min-width: 992px) {
+    @media (min-width: 992px) {
       font-size: 36px;
     }
   }
@@ -829,7 +822,7 @@ section.home-about-area .content ul+a {
 
     .line-box {
       height: 1px;
-      background-color: #E2E2E2;
+      background-color: #e2e2e2;
       width: 100px;
       position: absolute;
       top: 50%;
@@ -838,7 +831,7 @@ section.home-about-area .content ul+a {
       .circle {
         width: 10px;
         height: 10px;
-        background-color: #E2E2E2;
+        background-color: #e2e2e2;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -848,7 +841,7 @@ section.home-about-area .content ul+a {
       .circle-2 {
         width: 26px;
         height: 26px;
-        background-color: #E2E2E2;
+        background-color: #e2e2e2;
         border-radius: 26px;
         position: absolute;
         top: 50%;
@@ -856,7 +849,7 @@ section.home-about-area .content ul+a {
         padding: 4px;
 
         &:before {
-          content: '';
+          content: "";
           display: block;
           height: 100%;
           background-color: var(--white-color);
@@ -885,7 +878,6 @@ section.home-about-area .content ul+a {
 
         .circle-2 {
           right: -13px;
-
         }
       }
     }
@@ -913,7 +905,7 @@ section.home-about-area .content ul+a {
 }
 
 .content-margin {
-  >* {
+  > * {
     &:not(:last-child) {
       margin-bottom: 1.5rem;
     }
@@ -923,7 +915,7 @@ section.home-about-area .content ul+a {
 .get-a-quote-form {
   input[type="checkbox"] {
     &:checked {
-      &+label {
+      & + label {
         .plus-minus-box {
           background-color: var(--e-global-color-accent);
 
@@ -981,7 +973,7 @@ section.home-about-area .content ul+a {
 
       &:before,
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         left: 50%;
         top: 50%;
@@ -992,7 +984,6 @@ section.home-about-area .content ul+a {
         width: 30px;
         height: 1px;
         background-color: var(--black-color);
-
       }
 
       &:after {
@@ -1002,15 +993,12 @@ section.home-about-area .content ul+a {
         transition: 300ms;
       }
     }
-
-
   }
-
 
   .form-box {
     .form-box-header {
       margin-top: 75px;
-      border-top: 2px solid #E2E2E2;
+      border-top: 2px solid #e2e2e2;
     }
 
     .inner {
@@ -1039,7 +1027,7 @@ section.home-about-area .content ul+a {
 
       input:not([type="submit"]):not([type="checkbox"]),
       textarea {
-        border: 1px solid #B1B1B1;
+        border: 1px solid #b1b1b1;
         border-radius: 50px;
         padding: 15px 30px;
         line-height: 1;
@@ -1049,7 +1037,6 @@ section.home-about-area .content ul+a {
       }
 
       .row-buttons {
-
         button,
         input {
           width: 100%;
@@ -1081,7 +1068,7 @@ section.home-about-area .content ul+a {
       justify-content: space-between;
       padding-top: 10px;
       padding-bottom: 10px;
-      border-bottom: 1px solid #B1B1B1;
+      border-bottom: 1px solid #b1b1b1;
 
       &:after {
         content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g id="Group_568" data-name="Group 568" transform="translate(-507 -3702.75)"><g id="Ellipse_31" data-name="Ellipse 31" transform="translate(507 3702.75)" fill="%23fdcd55" stroke="%23fdcd55" stroke-width="3"><circle cx="10.5" cy="10.5" r="10.5" stroke="none"/><circle cx="10.5" cy="10.5" r="9" fill="none"/></g><path id="Path_263" data-name="Path 263" d="M513.659,3713.843l3.586,3.586,6.436-6.436" transform="translate(-1.171 -0.961)" fill="none" stroke="%23000" stroke-width="2"/></g></svg>');
@@ -1102,7 +1089,7 @@ section.home-about-area .content ul+a {
 }
 
 .home-blog-items li .mask-overlay {
-  background-color: #FDCD556E !important;
+  background-color: #fdcd556e !important;
 }
 
 .clear-selection {
@@ -1129,10 +1116,10 @@ section.home-about-area .content ul+a {
     .swiper-pagination-bullet {
       width: 17px;
       height: 17px;
-      background-color: #E0E0E0;
+      background-color: #e0e0e0;
 
       &.swiper-pagination-bullet-active {
-        background-color: #8D8C8C;
+        background-color: #8d8c8c;
       }
     }
   }
@@ -1142,12 +1129,12 @@ section.home-about-area .content ul+a {
   padding-bottom: 50px;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     top: 50%;
     bottom: 0;
-    background-color: #2B3841;
+    background-color: #2b3841;
     right: 0;
   }
 
@@ -1161,8 +1148,8 @@ section.home-about-area .content ul+a {
     border-radius: 30px;
 
     &:before {
-      content: '';
-      background-color: #1B1B1E8B;
+      content: "";
+      background-color: #1b1b1e8b;
       position: absolute;
       left: 0;
       top: 0;
@@ -1235,5 +1222,13 @@ section.home-about-area .content ul+a {
       padding-left: 10px;
       padding-right: 10px;
     }
+  }
+}
+
+.blog {
+  .header-area {
+    background-color: var(--dark-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
