@@ -12,6 +12,11 @@ Text Domain:  tors-child
   --dark-color: #151515;
   --black-color: #000; }
 
+body,
+p,
+li {
+  font-family: "CircularStd", sans-serif !important; }
+
 @media screen and (min-width: 768px) and (max-width: 819px) {
   body.logged-in header {
     margin-top: 45px !important; } }
