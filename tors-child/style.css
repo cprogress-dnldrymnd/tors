@@ -851,6 +851,7 @@ section.home-about-area .content ul + a {
   padding-right: 10px; }
 
 .blog .header-area {
+  position: static;
   background-color: var(--dark-color);
   padding-top: 40px;
   padding-bottom: 40px; }
