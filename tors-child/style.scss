@@ -35,7 +35,7 @@ body {
     color: inherit;
   }
   h3 {
-    @media(min-width: 992px) {
+    @media (min-width: 992px) {
       font-size: 36px;
     }
   }
@@ -59,7 +59,9 @@ body {
     }
   }
 }
-.home-blog-contents h2, .home-about-area .features-contents, .home-blog-items li .text-content h3 {
+.home-blog-contents h2,
+.home-about-area .features-contents,
+.home-blog-items li .text-content h3 {
   line-height: 1.3 !important;
 }
 @media screen and (min-width: 768px) and (max-width: 819px) {
@@ -1227,7 +1229,8 @@ section.home-about-area .content ul + a {
   }
 }
 
-.blog {
+.blog,
+.elementor-editor-active {
   .header-area {
     position: static;
     background-color: var(--dark-color);
@@ -1236,6 +1239,6 @@ section.home-about-area .content ul + a {
     margin-top: 0 !important;
   }
 }
-.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+.elementor-widget-heading .elementor-heading-title[class*="elementor-size-"] > a {
   font-weight: inherit;
 }
