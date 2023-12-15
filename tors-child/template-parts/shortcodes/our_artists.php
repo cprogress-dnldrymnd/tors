@@ -74,3 +74,68 @@ else { ?>
   </div>
 <?php } ?>
 
+<script>
+
+  <?php
+  while ($query->have_posts()) {
+    $query->the_post();
+
+    $before_audio = carbon_get_the_post_meta('before_audio');
+    $after_audio = carbon_get_the_post_meta('after_audio');
+
+    if ($before_audio) {
+      ?>
+      $id = 'before-audio-<?= get_the_ID() ?>';
+      $before_audio_url = '<?= wp_get_attachment_url($before_audio); ?>';
+      wavesurfer($id, $before_audio_url);
+      <?php
+    }
+    if ($after_audio) {
+      ?>
+      $id = 'after-audio-<?= get_the_ID() ?>';
+      $after_audio_url = '<?= wp_get_attachment_url($after_audio); ?>';
+      wavesurfer($id, $after_audio_url);
+      <?php
+    }
+
+  }
+  wp_reset_postdata();
+  ?>
+
+  function wavesurfer($id, $url) {
+    // With pre-decoded audio data
+    const wavesurfer = WaveSurfer.create({
+      "container": document.getElementById($id),
+      "height": 30,
+      "splitChannels": false,
+      "normalize": true,
+      "waveColor": "#6e6e6d",
+      "progressColor": "#ffffff",
+      "cursorColor": "#ddd5e9",
+      "cursorWidth": 4,
+      "barWidth": 4,
+      "barGap": 3,
+      "barRadius": 30,
+      "barHeight": null,
+      "minPxPerSec": 1,
+      "fillParent": true,
+      "url": $url,
+      "autoplay": false,
+      "interact": true,
+      "hideScrollbar": false,
+      "audioRate": 1,
+      "autoScroll": true,
+      "autoCenter": true,
+      "sampleRate": 8000
+    })
+
+    wavesurfer.on('interaction', () => {
+      wavesurfer.play()
+    })
+
+    wavesurfer.on('finish', () => {
+      wavesurfer.setTime(0)
+    })
+  }
+
+</script>
