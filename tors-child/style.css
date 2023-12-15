@@ -15,7 +15,8 @@ Text Domain:  tors-child
 
 body,
 p,
-li {
+li,
+.tab-content-area label {
   font-family: "CircularStd", sans-serif !important; }
 
 .content {
