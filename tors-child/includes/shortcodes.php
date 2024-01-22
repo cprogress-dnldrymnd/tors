@@ -19,40 +19,18 @@ function get_a_quote_form()
 add_shortcode('get_a_quote_form', 'get_a_quote_form');
 
 
-function our_artists()
-{
+function our_artists() {
   ob_start();
   get_template_part('template-parts/shortcodes/our_artists');
   return ob_get_clean();
 }
 
 
-add_shortcode('our_artists', 'our_artists');
+add_shortcode( 'our_artists', 'our_artists' );
 
-function artists_audio()
-{
 
-  
-?>
-  <div class="audio-box-wrapper">
-    <?php if ($before_audio) { ?>
-      <div class="audio-box-holder d-flex align-items-center">
-        <div class="audio-label">
-          Before:
-        </div>
-        <div class="audio-box before-audio" id="before-audio-<?= get_the_ID() ?>">
-        </div>
-      </div>
-    <?php } ?>
-    <?php if ($after_audio) { ?>
-      <div class="audio-box-holder d-flex align-items-center">
-        <div class="audio-label">
-          After:
-        </div>
-        <div class="audio-box" id="after-audio-<?= get_the_ID() ?>">
-        </div>
-      </div>
-    <?php } ?>
-  </div>
-<?php
+function post_content() {
+	return wpautop(get_the_content());
 }
+
+add_shortcode( 'post_content', 'post_content' );
