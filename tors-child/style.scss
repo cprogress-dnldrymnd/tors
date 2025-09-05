@@ -1242,3 +1242,7 @@ section.home-about-area .content ul + a {
 .elementor-widget-heading .elementor-heading-title[class*="elementor-size-"] > a {
   font-weight: inherit;
 }
+
+#wp-admin-bar-redux_demo {
+  display: none !important;
+}
